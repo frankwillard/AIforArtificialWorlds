@@ -27,7 +27,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#motivation">Motivation</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
@@ -45,8 +45,189 @@
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
             </div>
         </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
+        <!-- Motivation -->
+        <section class="page-section" id="motivation">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Motivation</h2>
+
+                        <hr class="divider light my-4" />
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3>Energy Access Planning</h3>
+                            <p class="text-muted" style="text-align: justify">
+                                Access to electricity is correlated with improvements in income, education, maternal mortality, and gender
+                                equality. Around <a href="https://energyeducation.ca/encyclopedia/Access_to_electricity">1.2 billion people worldwide do not
+                                have electricity in their homes</a>, many of them located in Subsaharan Africa and Asia. Information on the location and
+                                characteristics of energy infrastructure comprising generation, transmission, and end-use consumption can inform policy makers
+                                in energy access planning and is critical to efficiently deploying energy resources. Such information will allow energy developers
+                                to understand how best serve the electricity needs of communities without access to electricity through either power grid
+                                extensions, micro/mini grids, or off-grid solutions.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="img/motivation/Global Access to Electricity.png" class="img-responsive" alt=""style="width:100%; height:70%">
+                            <caption><i>Image from: <a href="https://www.visualcapitalist.com/mapped-billion-people-without-access-to-electricity/">
+                                https://www.visualcapitalist.com/mapped-billion-people-without-access-to-electricity/</a></i></caption>
+
+                            <p style="margin-top: 2.5em" class="text-muted"  style="text-align: justify">However, energy data for developers is often outdated,
+                                incomplete, or inaccessible. This is a common issue for NGO’s and other developers of distributed energy resources (DER) and
+                                microgrids who are looking to provide additional electricity access. </p>
+                            <p class="text-muted"  style="text-align: justify"> One potential solution to this lack of energy infrastructure data is to automate
+                                the process of mapping energy infrastructure using deep learning in satellite imagery. Using deep learning, we can feed an overhead
+                                image to a model and make predictions about the contents or characteristics of the region photographed in the image. Using this
+                                tool, the resulting information on energy infrastructure can then help inform energy access planning, such as deciding the most
+                                cost-effective option among distributed generation, micro-grids, or grid extension strategies for electrification.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <h3 class="service-heading">Object Detection</h3>
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <img src="img/motivation/object detection explanation.jpeg" class="img-responsive" alt="" style="width:100%">
+                            <caption><i>Image from: <a href="https://towardsdatascience.com/yolo-v3-object-detection-53fb7d3bfe6b">
+                                You only look once, or YOLO</a></i></caption>
+                        </div>
+
+
+                        <div class="col-md-6">
+                            <p class="text-muted" style="text-align: justify;">
+                                For this project, we focus on object detection, which is a combination of classification with object localization.
+                                The model analyzes images and predicts bounding boxes that surround each object within the image. It  also classifies
+                                each object, producing a confidence score corresponding to the level of certainty of its prediction. In the image on
+                                the left, the model predicted that there were different objects represented by each of the boxes shown in green, yellow
+                                and pink. The model also predicted that the objects within these colored boxes were a handbag, a car, and a person
+                                respectively. The model learns how to predict these boxes and classifications based on examples shown to it. These
+                                examples have labels (the object’s class and the location of the bounding box within the image) that we collectively
+                                refer to as ground truth.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <h3 class="service-heading">Applying Deep Learning to Overhead Imagery</h5>
+                        <div class="row">
+
+                            <div class="col-md-12 my-auto">
+                                <img src="img/motivation/apply deep learning model to overhead imagery.png" class="img-responsive" alt="apply deep learning" style="width:90%">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 my-auto">
+                                <p class="text-muted" style="text-align: justify;">
+                                    After training this model, we could apply it to a collection of overhead imagery to locate and classify energy
+                                    infrastructure across a whole region. While we could demonstrate this for any number of types of electricity
+                                    infrastructure, we use wind turbines because they are relatively homogeneous in appearance, unlike power plants,
+                                    for example, which come in many different configurations. Outside of size differences, there is little variation
+                                    between types of wind turbines. We also start with data from within the US, because high resolution overhead imagery
+                                    data are readily available across the continental US.</p>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="row text-center">
+                    <h3 class="service-heading">Challenges with Object Detection</h3>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Problem 1: Lack of labeled data for rare objects</h4>
+                            <p class="text-muted" style="text-align: justify;">
+                                Object detection networks, like the one used in this work, are notorious for their "data hunger," requiring
+                                <strong>large amounts of annotated training data to perform well</strong>. For common infrastructure like buildings
+                                and roads, there is ample real-world data available to train such models. However, energy infrastructure is
+                                <strong>rare</strong> both in number and density, so collecting and annotating large amounts of satellite images
+                                manually is <strong>expensive</strong> and time consuming.
+                            </p>
+                        </div>
+
+                        <!--<div class="col-md-6">
+                            <img src="img/motivation/wind_turbines_rarity.png" class="img-responsive" alt=""style="width:80%; height:80%">
+                        </div>
+                      </div>
+                      <div class="row">-->
+
+                        <div class="col-md-12">
+                            <h4>Problem 2: Domain adaptation</h4>
+                            <p class="text-muted" style="text-align: justify;">
+                                Typically our labeled training data are not from the same location as where we want to apply these techniques. However, object
+                                detection models poor performance on images that are from domians that are <strong>not similar</strong> to the ones that it
+                                has previously seen. In our case, this means the model will struggle when trying to apply it to <strong>new geographies</strong>
+                                and to <strong>different variations</strong> of styles of energy infrastructure.
+                            </p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <img src="img/motivation/domain_adaptation_updated.png" class="img-responsive" alt=""style="width:90%; height:90%"><br>
+                            <caption><i>Figure: Example of the domain adaptation challenge, for a model trained on images with geographical features of the images in the
+                                source domain (forest & grasslands) that underperforms when tested on images with different background in the target domain (desert)</i></caption>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <h3 class="service-heading">Proposed solution: synthetic imagery</h3>
+                    <div class="row">
+                        <div class="col-md-12 my-auto">
+
+                            <p class="text-muted" style="text-align: justify;">
+                                Since training data are difficult to collect, in this project we explore creating synthetic data to supplement the real data
+                                that are available. We do this by taking a real image without any energy infrastructure present and introducing a 3D model of
+                                an object of interest on top of that image as seen in the figure below. Then we position the camera in the overhead position
+                                and capture images in a manner that mimics the appearance of overhead imagery. Knowing where we placed the wind turbines in
+                                the synthetic image, we also generate ground truth labels for each of these images.
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <img src="img/motivation/synthetic imagery.png" class="img-responsive" alt=""style="width:90%; height:90%"><br>
+                            <caption><i>Figure: Synthetic imagery generation process overview</i></caption>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="service-heading">Previous work</h3>
+                        <p class="text-muted" style="text-align: justify;">
+                            For five years, the Duke Energy Data Analytics Lab has worked on developing deep learning models that identify energy infrastructure,
+                            with an end goal of generating maps of power systems and their characteristics that can aid policymakers in implementing effective
+                            electrification strategies. In 2015-16, researchers created a model that can detect solar photovoltaic arrays with high accuracy <a
+                            href="https://bassconnections.duke.edu/project-teams/energy-data-analytics-lab-2015-2016">[2015-16
+                            Bass Connections Team]</a>.
+                            In 2018-19, this model was improved to identify different types of transmission and distribution energy infrastructures,
+                            including power lines and transmission towers <a
+                            href="https://bassconnections.duke.edu/project-teams/energy-data-analytics-lab-energy-infrastructure-map-world-through-satellite-data-2018">[2018-19
+                            Bass Connections Team]</a>. Last year's project focused on increasing the adaptability of detection models
+                            across different geographies by creating realistic synthetic imagery <a
+                            href="https://bass-connections-2019.github.io/">[2019-20
+                            Bass Connections Team]</a>. In our project, we build upon this progress and try to improve the model's ability to detect rare objects
+                            in new, diverse locations.
+                        </p>
+                    </div>
+                    <!--<div class="col-md-6">
+                      <img src="img/overview_OLD/energy_information.png" class="img-responsive center" alt=""
+                      style="width:100%">
+                    </div>-->
+                </div>
+
+
+            </div>
+        </section>
+                <!-- Services-->
+        <!--<section class="page-section" id="services">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Services</h2>
@@ -79,7 +260,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section>-->
         <!-- Portfolio Grid-->
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
