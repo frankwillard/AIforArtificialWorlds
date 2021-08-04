@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="Add electricity image">
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/experimental design setup.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/process.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/motivation/apply deep learning model to overhead imagery.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/motivation/domain_adaptation_updated.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/motivation/object detection explanation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/new-header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/results/EM_graph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/results/NE_graph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/results/overall_graph.png" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="Added images and figures">
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/Pairwise Cycle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/results/EM_table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/results/NE_table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/results/overall_table.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/motivation/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/motivation/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/motivation/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/assets/img/motivation/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +38,8 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dist/assets/img/results" />
-      <recent name="$PROJECT_DIR$/dist/assets/img" />
       <recent name="$PROJECT_DIR$/dist/assets/img/methodology" />
+      <recent name="$PROJECT_DIR$/dist/assets/img" />
       <recent name="$PROJECT_DIR$/dist/assets/img/team" />
     </key>
   </component>
@@ -126,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628103559940</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added images and figures">
+      <created>1628112923620</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1628112923621</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +149,7 @@
     <MESSAGE value="Updated previous work section" />
     <MESSAGE value="Updated picture" />
     <MESSAGE value="Add electricity image" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add electricity image" />
+    <MESSAGE value="Added images and figures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added images and figures" />
   </component>
 </project>
