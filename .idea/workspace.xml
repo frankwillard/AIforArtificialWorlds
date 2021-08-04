@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="Added images and figures">
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/Pairwise Cycle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/results/EM_table.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/results/NE_table.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/results/overall_table.png" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="Added more images and figures">
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/key_takeaways/takeaways_graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/key_takeaways/takeaways_table.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/motivation/proposed_solution.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -37,10 +36,11 @@
       <recent name="$PROJECT_DIR$/dist/assets/img/team" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/assets/img/motivation" />
+      <recent name="$PROJECT_DIR$/dist/assets/img/key_takeaways" />
       <recent name="$PROJECT_DIR$/dist/assets/img/results" />
       <recent name="$PROJECT_DIR$/dist/assets/img/methodology" />
       <recent name="$PROJECT_DIR$/dist/assets/img" />
-      <recent name="$PROJECT_DIR$/dist/assets/img/team" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628112923621</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added more images and figures">
+      <created>1628114237462</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1628114237462</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +157,7 @@
     <MESSAGE value="Updated picture" />
     <MESSAGE value="Add electricity image" />
     <MESSAGE value="Added images and figures" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added images and figures" />
+    <MESSAGE value="Added more images and figures" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more images and figures" />
   </component>
 </project>
