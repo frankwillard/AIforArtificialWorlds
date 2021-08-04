@@ -71,7 +71,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <img src="img/motivation/Global Access to Electricity.png" class="img-responsive" alt=""style="width:100%; height:70%">
+                            <img src="assets/img/motivation/Global Access to Electricity.png" class="img-responsive" alt=""style="width:100%; height:70%">
                             <caption><i>Image from: <a href="https://www.visualcapitalist.com/mapped-billion-people-without-access-to-electricity/">
                                 https://www.visualcapitalist.com/mapped-billion-people-without-access-to-electricity/</a></i></caption>
 
@@ -92,7 +92,7 @@
                     <div class="row">
 
                         <div class="col-md-6">
-                            <img src="img/motivation/object detection explanation.jpeg" class="img-responsive" alt="" style="width:100%">
+                            <img src="assets/img/motivation/object detection explanation.png" class="img-responsive" alt="" style="width:100%">
                             <caption><i>Image from: <a href="https://towardsdatascience.com/yolo-v3-object-detection-53fb7d3bfe6b">
                                 You only look once, or YOLO</a></i></caption>
                         </div>
@@ -118,7 +118,7 @@
                         <div class="row">
 
                             <div class="col-md-12 my-auto">
-                                <img src="img/motivation/apply deep learning model to overhead imagery.png" class="img-responsive" alt="apply deep learning" style="width:90%">
+                                <img src="assets/img/motivation/apply deep learning model to overhead imagery.png" class="img-responsive" alt="apply deep learning" style="width:90%">
                             </div>
                         </div>
 
@@ -152,7 +152,7 @@
                         </div>
 
                         <!--<div class="col-md-6">
-                            <img src="img/motivation/wind_turbines_rarity.png" class="img-responsive" alt=""style="width:80%; height:80%">
+                            <img src="assets/img/motivation/wind_turbines_rarity.png" class="img-responsive" alt=""style="width:80%; height:80%">
                         </div>
                       </div>
                       <div class="row">-->
@@ -168,7 +168,7 @@
                         </div>
 
                         <div class="col-md-12">
-                            <img src="img/motivation/domain_adaptation_updated.png" class="img-responsive" alt=""style="width:90%; height:90%"><br>
+                            <img src="assets/img/motivation/domain_adaptation_updated.png" class="img-responsive" alt=""style="width:90%; height:90%"><br>
                             <caption><i>Figure: Example of the domain adaptation challenge, for a model trained on images with geographical features of the images in the
                                 source domain (forest & grasslands) that underperforms when tested on images with different background in the target domain (desert)</i></caption>
                         </div>
@@ -189,7 +189,7 @@
                             </p>
                         </div>
                         <div class="col-md-12">
-                            <img src="img/motivation/synthetic imagery.png" class="img-responsive" alt=""style="width:90%; height:90%"><br>
+                            <img src="assets/img/motivation/synthetic imagery.png" class="img-responsive" alt=""style="width:90%; height:90%"><br>
                             <caption><i>Figure: Synthetic imagery generation process overview</i></caption>
                         </div>
                     </div>
@@ -223,7 +223,7 @@
                         </p>
                     </div>
                     <!--<div class="col-md-6">
-                      <img src="img/overview_OLD/energy_information.png" class="img-responsive center" alt=""
+                      <img src="assets/img/overview_OLD/energy_information.png" class="img-responsive center" alt=""
                       style="width:100%">
                     </div>-->
                 </div>
@@ -254,10 +254,10 @@
                                 </p>
                             </div>
                             <div class="col-md-12 my-auto">
-                                <img src="img/methodology/Overview of Steps.png" class="img-responsive" alt=""style="width:100%">
+                                <img src="assets/img/methodology/experimental%20design%20setup.jpg" class="img-responsive" alt=""style="width:100%">
                             </div>
                         </div>
-                        <hr class="divider light my-4" />
+                        <!--<hr class="divider light my-4" />
                         <h2 class="service-heading text-left">Collecting Real Imagery</h2>
                         <div class="row">
                             <div class="col-md-12 my-auto">
@@ -290,7 +290,7 @@
                                 </dl>
                             </div>
                             <div class="col-md-12 my-auto">
-                                <img src="img/methodology/Collecting Overhead Imagery.png" class="img-responsive" alt="" style="width:80%"><br>
+                                <img src="assets/img/methodology/Collecting Overhead Imagery.png" class="img-responsive" alt="" style="width:80%"><br>
                                 <caption><i>Figure: Each dot represents a single image that we collected.</i></caption>
                             </div>
                         </div>
@@ -301,10 +301,10 @@
                                 <p class="text-muted" style="text-align: justify;"> Below we can see the regions splits by which states they include,
                                     as well as the number of images we collected for each region.
                                 </p>
-                                <img src="img/methodology/Where Our Data is From.png" class="img-responsive" alt="" style="width:70%"><br>
+                                <img src="assets/img/methodology/Where Our Data is From.png" class="img-responsive" alt="" style="width:70%"><br>
                                 <caption><i>Figure: Map of the U.S. showing the U.S. states and number of images we collected in each region</i></caption>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -313,15 +313,12 @@
                 <div class="row">
                     <div class="col-md-12 my-auto">
                         <h2 class="service-heading">Creating Synthetic Imagery</h2>
-                        <p class="text-muted" style="text-align: justify;"> To create synthetic imagery, we use a software called CityEngine. As inputs to
-                            this process, we need a list of background images that do not contain any wind turbines and a 3D model of a wind turbine. We then can automatically generate synthetic images.
-                            First, the software places a randomly chosen background image and then randomly generates 3D wind turbine models
-                            on top of the background image to create the 3D scene shown in the middle of the figure below. Next, the software moves a simulated camera
-                            in the overhead/bird's eye view and saves these overhead images.
+                        <h2 class="service-heading">GANs</h2>
+                        <p class="text-muted" style="text-align: justify;"> Generative Adversarial Networks (GANs) are a method of generative modeling. The concept behind GANs is a zero sum game between two Neural Networks- a generator network and a discriminator network. While the generator attempts to create images that are as realistic as possible, the discriminator tries to determine if those images are real or fake (generated by the GAN). This novel approach to generative modeling has seen a rapid increase in usage in the various scientific domains, due to its ability to generate photorealistic images for tasks including data augmentation, creating art, image to image translation, image harmonization, and image super-resolution. [Source]
                         </p>
                     </div>
                     <div class="col-md-12 my-auto">
-                        <img src="img/methodology/Synthetic Generation Process.png" class="img-responsive" alt="" style="width:100%">
+                        <img src="assets/img/methodology/process.jpg" class="img-responsive" alt="" style="width:100%">
                     </div>
                 </div>
 
@@ -335,7 +332,7 @@
                         </p>
                     </div>
                     <div class="col-md-8 my-auto">
-                        <img src="img/methodology/Generating Annotations.png" class="img-responsive" alt="" style="width:100%">
+                        <img src="assets/img/methodology/Generating Annotations.png" class="img-responsive" alt="" style="width:100%">
                         <caption><i>Figure: Side-by-side of an RGB image with its corresponding black-and-white label.</i></caption>
                     </div>
                 </div>
@@ -349,7 +346,7 @@
                         </p>
                     </div>
                     <div class="col-md-12 my-auto">
-                        <img src="img/methodology/Example Synthetic Images.png" class="img-responsive" alt="" style="width:80%;"><br>
+                        <img src="assets/img/methodology/Example Synthetic Images.png" class="img-responsive" alt="" style="width:80%;"><br>
                         <caption class="text-muted"><i>Figure: Our synthetic images contain a variety of background images and camera angles. They look fairly similar to our real imagery.</i></caption>
                     </div>
                 </div>
@@ -366,7 +363,7 @@
                 <br>
                 <div class="row">
                     <div class="col-md-6 my-auto">
-                        <img src="img/methodology/Turbine Size Distribution.png" class="img-responsive" alt="" style="width:100%">
+                        <img src="assets/img/methodology/Turbine Size Distribution.png" class="img-responsive" alt="" style="width:100%">
                         <caption class="text-muted"><i>Figure: Bounding box size distribution of turbines in real imagery.</i></caption>
                     </div>
                     <div class="col-md-6 my-auto">
@@ -392,14 +389,14 @@
                         </p>
                     </div>
                     <div class="col-md-6 my-auto">
-                        <img src="img/methodology/Angle of Camera 2.png" class="img-responsive" alt="" style="width:100%">
+                        <img src="assets/img/methodology/Angle of Camera 2.png" class="img-responsive" alt="" style="width:100%">
                         <caption class="text-muted"><i>Figure: Bounding box size distribution of turbines in real imagery.</i></caption>
                     </div>
                 </div>
                 <br>
                 <div class="row">
                     <div class="col-md-6 my-auto">
-                        <img src="img/methodology/Nearby Background Image.png" class="img-responsive" alt="" style="width:100%">
+                        <img src="assets/img/methodology/Nearby Background Image.png" class="img-responsive" alt="" style="width:100%">
                         <caption class="text-muted"><i>Figure: Test image and nearby collected background image.</i></caption>
                     </div>
                     <div class="col-md-6 my-auto">
@@ -431,7 +428,7 @@
                             </div>
                             <div class="col-md-12 my-auto">
                                 <p style="text-align:center;">
-                                    <img src="img/methodology/Clustering and Stratified Sampling.png" class="img-responsive" alt="" class="center" style="width:80%; height:70%">
+                                    <img src="assets/img/methodology/Clustering and Stratified Sampling.png" class="img-responsive" alt="" class="center" style="width:80%; height:70%">
                                 </p>
                                 <br>
                                 <caption class="text-muted"><i>Figure: DBSCAN clustering within each geographic region and then stratified random sampling from each cluster to construct our training and testing datasets. Each dot represents a real imge, and each color represents a different cluster. For each cluster, the sample size is proportional to the cluster size, so larger clusters will have more images in both training and testing data. </i></caption>
@@ -442,7 +439,7 @@
                         <div class="row">
 
                             <div class="col-md-6 my-auto">
-                                <img src="img/methodology/Ratio Test Experimental Design.png" class="img-responsive" alt="Ratio Test Experimental Design" style="width:100%">
+                                <img src="assets/img/methodology/Ratio Test Experimental Design.png" class="img-responsive" alt="Ratio Test Experimental Design" style="width:100%">
                             </div>
 
                             <div class="col-md-6 my-auto">
@@ -481,7 +478,7 @@
                                     </div>
 
                                     <div class="col-md-6 my-auto">
-                                        <img src="img/methodology/Overall Domain Map.png" class="img-responsive" class="center" alt="" style="width:100%; height:150%">
+                                        <img src="assets/img/methodology/Overall Domain Map.png" class="img-responsive" class="center" alt="" style="width:100%; height:150%">
                                         <br>
                                         <caption class="text-muted"><i>Figure: Overall Experiment Setup. In within-domain experiments, the target domain (Northwest) remains the same geographic region as the source domain (Northwest). In cross-domain experiments, the target domain (Northeast) has no labeled real data, so the model is trained on a different source domain (Northwest) and then applied to the target domain. Orange color denotes a source domain, whereas blue color denotes a target domain.</i></caption>
                                     </div>
@@ -489,7 +486,7 @@
 
                                 <div class="row">
                                     <div class="col-md-6 my-auto">
-                                        <img src="img/methodology/Pairwise Cycle.png" class="img-responsive" alt="Pairwise Experiment Setup" style="width:100%">
+                                        <img src="assets/img/methodology/Pairwise Cycle.png" class="img-responsive" alt="Pairwise Experiment Setup" style="width:100%">
                                         <caption class="text-muted"><i>Figure: Pairwise experiment setup. The arrow tails point toward the source domain (where real training data comes from), whereas the arrow heads point toward the target domain (where the model will be tested on). Bi-directional arrows indicate each domain serves as the source for testing the other two domains, and in a separate experiment, the same domain serves as the target to be tested using model trained on the other domains. </i></caption>
                                     </div>
 
@@ -507,7 +504,7 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6 my-auto">
-                                        <img src="img/methodology/Within Domain Experiment.png" class="img-responsive" alt="" style="width:100%">
+                                        <img src="assets/img/methodology/dataset%20within%20domain%20process.jpg" class="img-responsive" alt="" style="width:100%">
                                         <caption class="text-muted"><i>Figure: <strong>Within-domain</strong> experiment example using Northwest as target domain.</i></caption>
                                     </div>
                                     <div class="col-md-6 my-auto">
@@ -525,7 +522,7 @@
                                 <br>
                                 <div class="row">
                                     <div class="col-md-6 my-auto">
-                                        <img src="img/methodology/Cross Domain Experiment.png" class="img-responsive" alt="" style="width:100%">
+                                        <img src="assets/img/methodology/dataset%20cross%20domain%20process.jpg" class="img-responsive" alt="" style="width:100%">
                                         <caption class="text-muted"><i>Figure: <strong>Cross-domain</strong> experiment example using Northwest as target domain and Eastern Midwest as non-target domain.</i></caption>
                                     </div>
                                     <div class="col-md-6 my-auto">
@@ -555,7 +552,7 @@
                         <div class="row">
                             <div class="col-md-6 my-auto">
                                 <br>
-                                <img src="img/results/metrics.png" class="img-responsive" alt="" style="width:100%">
+                                <img src="assets/img/results/metrics.png" class="img-responsive" alt="" style="width:100%">
                                 <br>
                                 <caption><font size="2">
                                     Figure 1: The model predicted that 4 objects were wind turbines. 2 of those predictions were correct, meaning
@@ -588,7 +585,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <br>
-                                    <img src="img/results/sample_pr.png" class="img-responsive" alt="" style="width:100%">
+                                    <img src="assets/img/results/sample_pr.png" class="img-responsive" alt="" style="width:100%">
                                     <br>
                                     <caption><font size="2">Figure 2: Sample Precision Recall Curve. We would like the curve to move to right as much as possible as indicated
                                         by the green arrow. </font></caption>
@@ -599,7 +596,7 @@
                                 <div class="row">
                                     <div class="col-md-6 my-auto">
                                         <br>
-                                        <img src="img/results/variance.png" class="img-responsive" alt="" style="width:100%">
+                                        <img src="assets/img/results/variance.png" class="img-responsive" alt="" style="width:100%">
                                         <br>
                                         <caption><font size="2">Figure 3: Sample PR curves of 4 runs of the same experiment. </font></caption>
                                         <br>
@@ -622,10 +619,10 @@
                                             </p>
                                         </div>
                                         <div class="col-md-12 my-auto">
-                                            <img src="img/results/overall-results.png" class="img-responsive" alt="" style="width:80%">
+                                            <img src="assets/img/results/overall_graph.png" class="img-responsive" alt="" style="width:80%">
                                         </div>
                                         <div class="col-md-12 my-auto">
-                                            <img src="img/results/overall-results-table.png" class="img-responsive" alt="" style="width:70%">
+                                            <img src="assets/img/results/overall-results-table.png" class="img-responsive" alt="" style="width:70%">
                                             <br>
                                             <caption><font size="2">Figure 4: All values are in average precision (AP). </font></caption>
                                         </div>
@@ -633,12 +630,12 @@
                                     <br>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <img src="img/results/NE-EM-baseline.png" class="img-responsive" alt="" style="width:80%">
+                                            <img src="assets/img/results/NE-EM-baseline.png" class="img-responsive" alt="" style="width:80%">
                                             <br>
                                             <caption><font size="2">Figure 5: Sample test image from the baseline experiment of training on Northeast and testing on Eastern Midwest. The model falsely predicted an architecture to the right as 3 wind turbines. </font></caption>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="img/results/NE-EM-adding-synthetic.png" class="img-responsive" alt="" style="width:80%">
+                                            <img src="assets/img/results/NE-EM-adding-synthetic.png" class="img-responsive" alt="" style="width:80%">
                                             <br>
                                             <caption><font size="2">Figure 6: Sample test image from the adding synthetic experiment of training on Northeast and testing on Eastern Midwest. The adding synthetic prediction is able to achieve a higher precision. </font></caption>
                                             <br>
@@ -659,8 +656,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 my-auto">
-                                            <img src="img/results/results-NE.png" class="img-responsive" alt="" style="width:100%">
-                                            <img src="img/results/results-NE-table.png" class="img-responsive" alt="" style="width:100%">
+                                            <img src="assets/img/results/NE_graph.png" class="img-responsive" alt="" style="width:100%">
+                                            <img src="assets/img/results/results-NE-table.png" class="img-responsive" alt="" style="width:100%">
                                             <br>
                                             <caption><font size="2">Figure 7: Results of training with real images from Northeast. </font></caption>
                                             <br>
@@ -669,8 +666,8 @@
                                             <br>
                                         </div>
                                         <div class="col-md-6 my-auto">
-                                            <img src="img/results/results-NW.png" class="img-responsive" alt="" style="width:100%">
-                                            <img src="img/results/results-NW-table.png" class="img-responsive" alt="" style="width:100%">
+                                            <img src="assets/img/results/results-NW.png" class="img-responsive" alt="" style="width:100%">
+                                            <img src="assets/img/results/results-NW-table.png" class="img-responsive" alt="" style="width:100%">
                                             <br>
                                             <caption><font size="2">Figure 8: Results of training with real images from Northwest. </font></caption>
                                             <br>
@@ -681,8 +678,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 my-auto">
-                                            <img src="img/results/results-EM.png" class="img-responsive" alt="" style="width:100%">
-                                            <img src="img/results/results-EM-table.png" class="img-responsive" alt="" style="width:100%">
+                                            <img src="assets/img/results/EM_graph.png" class="img-responsive" alt="" style="width:100%">
+                                            <img src="assets/img/results/results-EM-table.png" class="img-responsive" alt="" style="width:100%">
                                             <caption><font size="2">Figure 9: Results of training with real images from Eastern Midwest</font></caption>
                                         </div>
                                         <div class="col-md-6">
@@ -718,7 +715,7 @@
                         <br>
                         <div class="row">
                             <div class="col-md-12">
-                                <img src="img/key_takeaways/Overall Results.png" class="img-responsive" alt="" style="width:50%">
+                                <img src="assets/img/key_takeaways/Overall Results.png" class="img-responsive" alt="" style="width:50%">
                             </div>
                         </div>
                     </div>
@@ -745,7 +742,7 @@
                                     </li>
                                     <br>
                                     <div class="figure-img">
-                                        <img src="img/future_work/energyinfrastructure.png" class="img-responsive" alt="" style="width:100%">
+                                        <img src="assets/img/future_work/energyinfrastructure.png" class="img-responsive" alt="" style="width:100%">
                                         <br>
                                         <caption><i>Images from Pixabay: <a href="https://pixabay.com/images/id-3196696/">Substation</a>,
                                             <a href="https://pixabay.com/images/id-1868352/">Transmission Tower</a>,
@@ -758,7 +755,7 @@
                                     </li>
                                     <br>
                                     <div class= "figure-img">
-                                        <img src="img/future_work/Few Shot Learning.png" class="img-responsive" alt="" style="width:100%">
+                                        <img src="assets/img/future_work/Few Shot Learning.png" class="img-responsive" alt="" style="width:100%">
                                         <br>
                                         <caption><i>Figure: Guo, Y., Codella, N., Karlinsky, L., Smith, J., Simunic, T., & Feris, R. (2019). A New Benchmark for Evaluation of Cross-Domain Few-Shot Learning. ArXiv, abs/1912.07200. </i></caption>
                                     </div>
@@ -1029,9 +1026,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
+                </div>-->
             </div>
         </section>
         <!-- Clients-->
