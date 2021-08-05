@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="remove meta">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added meta back">
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/team/alex.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/team/caroline.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/img/team/Wayne.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/img/team/Wayne.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628176897358</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added meta back">
+      <created>1628177660744</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1628177660744</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +289,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added BC work as template" />
     <MESSAGE value="Fixed links in header" />
     <MESSAGE value="Updated previous work section" />
     <MESSAGE value="Updated picture" />
@@ -304,6 +313,7 @@
     <MESSAGE value="fixed meta" />
     <MESSAGE value="added slash" />
     <MESSAGE value="remove meta" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove meta" />
+    <MESSAGE value="added meta back" />
+    <option name="LAST_COMMIT_MESSAGE" value="added meta back" />
   </component>
 </project>
