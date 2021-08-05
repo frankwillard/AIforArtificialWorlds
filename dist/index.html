@@ -528,12 +528,10 @@
                                 <h5 class="service-heading">Overview</h5>
                                 <div class="row">
                                     <div class="col-md-6 my-auto">
-                                        <p class="text-muted" style="text-align: justify;">In the context of our work, we define a <strong>domain</strong> as a geographic region, such as the US Pacific Northwest. A <strong>target domain</strong>  is where we aim to apply our model to, whereas a <strong>source domain</strong> is where the real training data comes from.
-
-                                            The long-term goal of our project is to apply our object detection model to a variety of unseen domains around the world, especially in developing areas where information on energy infrastructure is hard to obtain. This requires our model to be able to <strong>generalizable</strong>,
-                                            that is, the ability to perform well on images that are different from the images it was trained on. One real-world application in energy access planning is a scenario where there is limited labeled real data in target locations where we want to deploy energy resources to. For this scenario, we design <strong>within-domain</strong> experiments, where the target domain remains the same geographic region as source domain.
-
-                                            A second and more challenging scenario is when there is no real data in the target locations where we want to deploy energy resources to. Because the target domain has no real data, we have to draw data from an alternative source domain. For this scenario, we design <strong>cross-domain</strong> experiments, where we train on a source domain but we test on a target domain.
+                                        <p class="text-muted" style="text-align: justify;">
+                                            To evaluate the potential of synthetic imagery in improving the performance of object detection, we set up within and cross domain experiments, where a domain is defined as a specific geographic region. The source domain refers to the region that the real training data comes from, while the target domain refers to the region that the object detection model is applied to. These two types of experiments each correspond to a potential real-world situation one might encounter, and help us to evaluate the potential performance of the object detection model in each of these situations.
+                                            <br><br>
+                                            In the context of energy access planning, the ultimate goal of this project is to utilize object detection in various regions of the world where energy access is extremely limited and information on existing energy infrastructure is not readily available. Thus, the object detection model must be able to generalize well across different images despite labeled real satellite imagery most likely being limited.
 
                                         </p>
                                     </div>
@@ -552,11 +550,11 @@
                                     </div>
 
                                     <div class="col-md-6 my-auto">
-                                        <p class="text-muted" style="text-align: justify;"> Our hypothesis is that synthetic
-                                            imagery will help our model generalize to unseen domain - the model performance will improve when testing on a new geography in the presence
-                                            of synthetic data. We assume that training and testing on separate data, but from within the same domain, will perform better in general than training and testing on separate data from different domains. Note that although examples from continental US is shown here, in reality, a target domain is likely a less developed area without reliable access to electricity, and a source domain is likely a developed area with readily available data on energy infrastructures.  </p>
                                         <p class="text-muted" style="text-align: justify;">
-                                            In our case, each domain is a geographic region that we defined. Namely, Northwest, Northeast, and Eastern Midwest. To test the impact of each region, we run a 3-way pairwise experiment, where we train and test on each of the 3 regions, resulting in 6 experiments. For example, the Northeast region serves as the source domain for testing Northwest and Eastern Midwest. Then in a different experiment, a model trained using Eastern Midwest is tested on Northeast, and in another experiment, a model trained on Northwest is tested on Northeast. </p>
+                                            Our within-domain experiments, where the source and target domains are within the same geographic region, will help us to evaluate the potential for synthetic imagery to supplement limited real training data.
+                                            <br><br>
+                                            However, as mentioned previously, one of the key challenges that object detection presents is its poor performance when applied to data that looks significantly different from the data on which it is trained. Thus, the cross-domain experiments reflect the potential situation where there exists no data at all from the target domain, and thus the object detection model must be trained on data from an entirely different region. For this experiment, the synthetic data that is used will come from the target region, but the real images will come from a source region, different from the target.
+                                        </p>
 
                                     </div>
 
@@ -569,10 +567,16 @@
 
                                         <div class="col-md-6 my-auto">
                                             <p class="text-muted" style="text-align: justify;">
-                                                To construct our baseline and add synthetic data, we need to figure out what ratio of real to synthetic data yields
-                                                the largest gain in performance (if any). If we add too much synthetic data, then we run the risk of overfitting to synthetic data. If we add too little synthetic data, then it will have little impact on performance. To find this ratio, we designed an experiment, where we test ratios of 1:0, 1:0.5, 1:0.75,
-                                                1:1, and 1:2 real to synthetic ratios. After conducting these experiments, we found that 1:0.75 yields the greatest performance
-                                                as measured by average precision. Therefore, we design our experiments using the 1:0.75 ratio.  </p>
+                                                In constructing our experimental datasets, we need to figure out what ratio of real to synthetic data yields
+                                                the largest gain in performance (if any). Adding too much synthetic data could lead to overfitting to synthetic data and any irregularities within
+                                                the synthetic data or differences with regular images would be exacerbated such the object detection model may perform worse.
+                                                However, adding too little synthetic data will have a negligible effect on performance.
+                                                The 2019-2020 Bass Connections team designed an experiment in which they tested ratios of 1:0, 1:0.5, 1:0.75,
+                                                1:1, and 1:2 real to synthetic ratios. After conducting these experiments, they found that 1:0.75 yields the greatest performance
+                                                as measured by average precision. Therefore, to maintain similarity to the Bass Connections team, we design our experiments using the 1:0.75 ratio.
+                                                This ratio allows for fair comparison of our synthetic data generation with the Bass Connections team, however, in the future, we
+                                                would like to experiment with different ratios with our synthetic data generation process to find the optimal ratio.
+                                            </p>
                                         </div>
 
                                         <div class="col-md-6 my-auto">
@@ -584,7 +588,7 @@
                                     <br>
                                     <h5 class="service-heading">Design Setup</h5>
                                     <p class="text-muted" style="text-align: justify;">
-                                        Having clustered and sampled our data and found the optimal real to synthetic ratio, our final datasets for each region is: </p>
+                                        Having sampled our data and found the optimal real to synthetic ratio, our final datasets for each region is: </p>
                                     <ul>
                                         <li class="text-muted" style="text-align: justify;"><b>Baseline: </b> Train on 100 Real Non-Target Images, Test on 100 Target Domain Images</li>
                                         <li class="text-muted" style="text-align: justify;"><b>Modified: </b> Train on 100 Real Non-Target Images + 75 Syn Target Images, Test on 100 Target Domain Images </li>
@@ -603,10 +607,10 @@
                                     <div class="col-md-6 my-auto">
                                         <h5 class="service-heading">Within Domain Experiment (Target = Source)</h5>
                                         <p class="text-muted" style="text-align: left;">
-                                            Before we test how well synthetic imagery improves performance when the model is testing on a different domain than the one
-                                            it was trained on, we need to establish some baseline performance results for detecting wind turbines in the imagery to evaluate whether adding synthetic imagery improves our model's accuracy. We need to know how well the model is doing when it is trained and
-                                            tested on the same domain. Using Northwest region as our target domain, we ran our baseline and modified experiments,
-                                            and we repeat for the other domains/regions.</p>
+                                            For each of the domains we selected, we ran the baseline and modified experiments, where all of the data came from the same
+                                            region. This experiment helps to evaluate the overall ability of synthetic imagery (especially using our GP-GAN technique)
+                                            to improve the object detection performance.
+                                        </p>
                                     </div>
                                 </div>
                                 <br>
@@ -621,10 +625,11 @@
                                     <div class="col-md-6 my-auto">
                                         <h5 class="service-heading">Cross Domain Experiment (Target not equal to Source)</h5>
                                         <p class="text-muted" style="text-align: left;">
-                                            These experiments are designed to test if synthetic data can help overcome differences in geography. To test whether adding synthetic imagery improves our model's generalizability, we trained on one region, and tested
-                                            on another region (cross-domain). Then we added synthetic imagery similar to the target domain and compared performance against the baseline. Augmenting our baseline dataset with synthetic data not only provides more exmaples of images with wind turbines, but it provides examples that are more similar to the target locations the model will be deployed to. Thus, we expect adding synthetic data to improve our model's generalizability.
-                                            Here we demonstrate this experiment setup using Northwest as the target domain and Eastern Midwest as the non-target domain.
-                                            We repeated for the other domains as well. </p>
+                                            For these experiments, the domains for the real source and target images are different, while the synthetic images used in the modified training dataset
+                                            are from the target region. Thus, with synthetic images more similar to the target region, we hypothesize that the addition of the synthetic images will
+                                            improve the accuracy of the object detection when the target and source regions are dissimilar in appearance. These experiments will help us to evaluate
+                                            the potential for synthetic imagery to improve the object detection model’s ability to generalize across different regions despite the  limitations of the
+                                            existing training data. </p>
                                     </div>
                                 </div>
                                 <br>
@@ -643,6 +648,7 @@
 
                                         <div class="col-md-6 my-auto">
                                             <img src="assets/img/methodology/yolov3.png" class="img-responsive" alt="Ratio Test Experimental Design" style="width:100%">
+                                            <caption class="text-muted"><i>Figure: Sample output image from <a href="https://github.com/ultralytics/yolov3">Ultralytics YOLOv3 GitHub repository</a>.</i></caption>
                                         </div>
                                     </div>
 
