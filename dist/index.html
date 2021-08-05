@@ -671,16 +671,16 @@
                                 <img src="assets/img/results/metrics.png" class="img-responsive" alt="" style="width:100%">
                                 <br>
                                 <caption><font size="2">
-                                    Figure 1: The model predicted that 4 objects were wind turbines. 2 of those predictions were correct, meaning
+                                    Figure 1: In this image, the YOLOv3 model predicted that 4 objects were wind turbines. 2 of those predictions were correct, meaning
                                     the precision would be 2/4. There are 3 wind turbines in the image and the model found 2 of these, meaning the
                                     recall would be 2/3.</font></caption>
                             </div>
                             <div class = "col-md-6">
                                 <h3>Performance Metrics</h3>
                                 <p class="text-muted" style="text-align: justify;">
-                                    To understand our results, it's important that we first understand the metrics that we have chosen to measure
-                                    performance. The primary metrics we will use is Average Precision. We will explain
-                                    the implication of this metric starting with the images on the left.</p>
+                                    To understand our results, it's critical that we first understand the metrics that we have chosen to measure
+                                    performance. The primary metrics we will use is Average Precision, which combines the classification metrics
+                                    of precision and recall. We will explain the implication of these metrics starting with the images on the left.</p>
                                 <ul>
                                     <li class="text-muted" style="text-align: justify;"><b>Precision: </b> Out of the objects that the model classified as a wind turbine,
                                         what fraction of these were actually wind turbines.</li>
@@ -691,20 +691,21 @@
                             <div class="row">
                                 <div class = "col-md-6 my-auto">
                                     <p class="text-muted" style="text-align: justify;">
-                                        Now we plot the values of precision and recall a model can reach when doing predictions on a graph, which is known as a precision-recall
-                                        curve. You can see on the curve that as precision increases, recall decreases, and vice versa. There is hence a tradeoff between
+                                        Now we plot the values of precision and recall of the model's predicted outputs  on a graph, which is known as a precision-recall
+                                        curve. On the curves to the right, it is evident that that as precision increases, recall decreases, and vice versa. There is hence a tradeoff between
                                         precision and recall. However, we would like to have high values for both precision and recall, which means we would like the area
-                                        under the precision-recall curve to be as high as possible. A metric that quantifies this area is Average Precision (AP). </p>
+                                        under the precision-recall curve to be as high as possible. A metric that quantifies this area is Average Precision (AP), and thus
+                                        summarizes the precision-recall curve and rewards models with a high precision and recall. </p>
                                     <p class="text-muted" style="text-align: justify;">
-                                        Note that in the machine learning space, a small absolute increase in AP is already a significant improvement.
+                                        In the machine learning space, small absolute increases in AP denote a significant improvement in model performance.
                                     </p>
                                 </div>
                                 <div class="col-md-6">
                                     <br>
-                                    <img src="assets/img/results/sample_pr.png" class="img-responsive" alt="" style="width:100%">
+                                    <img src="assets/img/results/pr_curves.png" class="img-responsive" alt="" style="width:100%">
                                     <br>
-                                    <caption><font size="2">Figure 2: Sample Precision Recall Curve. We would like the curve to move to right as much as possible as indicated
-                                        by the green arrow. </font></caption>
+                                    <caption><font size="2">Figure 2:  Precision Recall Curves. We would like the curve to move to right as much as possible
+                                       </font></caption>
                                     <br>
                                     <br>
                                     <br>
@@ -721,7 +722,10 @@
                                     <div class = "col-md-6">
                                         <h3>Reducing Variance</h3>
                                         <p class="text-muted" style="text-align: justify;">
-                                            Due to variability in the object detection model’s training process, there will be variations between the results of each run, as shown on the left image. Each experiment is therefore repeated 4 times to account for this randomness and improve the accuracy of the result. The average AP value is calculated and used to compare results of our baseline model and model with added synthetic images.</p>
+                                            Due to variability and stochasticity in the object detection model’s training process, there will be slight variations
+                                            between the results of each run, as shown on the left image. Each experiment is therefore repeated 4 times to account
+                                            for this randomness and improve the accuracy of the result. The average AP value is calculated and used to compare results
+                                            of our baseline model, model with added CityEngine images, and model with added GP GAN images.</p>
                                     </div>
                                     <br>
                                     <hr class="divider light my-4" />
