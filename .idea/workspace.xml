@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="Removed unnecessary sections">
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/gan.png" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="Added GAN Section">
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/future_work/energyinfrastructure.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/Ratio Test Experimental Design.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/gp_gan.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -142,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628127033694</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added GAN Section">
+      <created>1628128109482</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1628128109483</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +181,7 @@
     <MESSAGE value="Added more images and figures" />
     <MESSAGE value="Updated key takeaways" />
     <MESSAGE value="Removed unnecessary sections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary sections" />
+    <MESSAGE value="Added GAN Section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GAN Section" />
   </component>
 </project>

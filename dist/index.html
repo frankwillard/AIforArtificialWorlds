@@ -316,7 +316,7 @@
                         <br>
                         <div class="row">
                             <div class="col-md-6 my-auto">
-                                <h5 class="service-heading">GANs</h5>
+                                <h5 class="service-heading">GANs Overview</h5>
                                 <p class="text-muted" style="text-align: justify;"> Generative Adversarial Networks (GANs) are a method of generative modeling.
                                     The concept behind GANs is a zero sum game between two Neural Networks- a generator network and a discriminator network.
                                     While the generator attempts to create images that are as realistic as possible, the discriminator tries to determine if
@@ -330,9 +330,26 @@
                                 <caption class="text-muted"><i>Figure: Bounding box size distribution of turbines in real imagery.</i></caption>
                             </div>
                         </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-6 my-auto">
+                                <img src="assets/img/methodology/gp_gan.png" class="img-responsive" alt="" style="width:100%">
+                                <caption class="text-muted"><i>Figure: Bounding box size distribution of turbines in real imagery.</i></caption>
+                            </div>
+                            <div class="col-md-6 my-auto">
+                                <h5 class="service-heading">GANs for Image Blending</h5>
+                                <p class="text-muted" style="text-align: justify;"> In trying to generate synthetic imagery with real wind turbines
+                                    in new terrains, our problem presented the need for image harmonization and image blending. This consists of matching
+                                    the visual appearance/style of the wind turbine and geographical background images when blending them into a single image.
+                                    Given the GANs state-of-the-art performance in “GP-GAN: Towards Realistic High-Resolution Image Blending” by Huikai Wu, et
+                                    al., we chose to investigate the potential for GANs to realistically develop our synthetic imagery dataset. [Source]
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-12 my-auto">
                         <br><br>
+                        <h2 class="service-heading">Synthetic Imagery with GP GAN Pipeline</h2>
                         <img src="assets/img/methodology/process.jpg" class="img-responsive" alt="" style="width:100%">
                     </div>
                 </div>
@@ -471,14 +488,8 @@
                         <div class="row">
                             <div class="col-md-12 my-auto">
                                 <h2 class="service-heading">Experimental Setup</h2>
+
                                 <br>
-                                <p class="text-muted" style="text-align: justify;">
-                                    Having clustered and sampled our data and found the optimal real to synthetic ratio, our final datasets for each region is: </p>
-                                <ul>
-                                    <li class="text-muted" style="text-align: justify;"><b>Baseline: </b> Train on 100 Real Non-Target Images, Test on 100 Target Domain Images</li>
-                                    <li class="text-muted" style="text-align: justify;"><b>Modified: </b> Train on 100 Real Non-Target Images + 75 Syn Target Images, Test on 100 Target Domain Images </li>
-                                </ul>
-                                </br>
 
                                 <h5 class="service-heading">Overview</h5>
                                 <div class="row">
@@ -514,6 +525,38 @@
                                             In our case, each domain is a geographic region that we defined. Namely, Northwest, Northeast, and Eastern Midwest. To test the impact of each region, we run a 3-way pairwise experiment, where we train and test on each of the 3 regions, resulting in 6 experiments. For example, the Northeast region serves as the source domain for testing Northwest and Eastern Midwest. Then in a different experiment, a model trained using Eastern Midwest is tested on Northeast, and in another experiment, a model trained on Northwest is tested on Northeast. </p>
 
                                     </div>
+
+                                </div>
+
+                                <br><br>
+                                <div class="row">
+                                    <h5 class="service-heading">Optimizing the Ratio of Real to Synthetic Data</h5>
+                                    <div class="row">
+
+                                        <div class="col-md-6 my-auto">
+                                            <p class="text-muted" style="text-align: justify;">
+                                                To construct our baseline and add synthetic data, we need to figure out what ratio of real to synthetic data yields
+                                                the largest gain in performance (if any). If we add too much synthetic data, then we run the risk of overfitting to synthetic data. If we add too little synthetic data, then it will have little impact on performance. To find this ratio, we designed an experiment, where we test ratios of 1:0, 1:0.5, 1:0.75,
+                                                1:1, and 1:2 real to synthetic ratios. After conducting these experiments, we found that 1:0.75 yields the greatest performance
+                                                as measured by average precision. Therefore, we design our experiments using the 1:0.75 ratio.  </p>
+                                        </div>
+
+                                        <div class="col-md-6 my-auto">
+                                            <img src="assets/img/methodology/Ratio Test Experimental Design.png" class="img-responsive" alt="Ratio Test Experimental Design" style="width:100%">
+                                        </div>
+                                    </div>
+
+
+                                    <br>
+                                    <h5 class="service-heading">Design Setup</h5>
+                                    <p class="text-muted" style="text-align: justify;">
+                                        Having clustered and sampled our data and found the optimal real to synthetic ratio, our final datasets for each region is: </p>
+                                    <ul>
+                                        <li class="text-muted" style="text-align: justify;"><b>Baseline: </b> Train on 100 Real Non-Target Images, Test on 100 Target Domain Images</li>
+                                        <li class="text-muted" style="text-align: justify;"><b>Modified: </b> Train on 100 Real Non-Target Images + 75 Syn Target Images, Test on 100 Target Domain Images </li>
+                                    </ul>
+                                    </br>
+
                                 </div>
 
 
