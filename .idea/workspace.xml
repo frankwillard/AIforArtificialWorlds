@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="fixed future work iamge size">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added our team to nav bar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -324,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628196195107</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="added our team to nav bar">
+      <created>1628196462204</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1628196462204</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +349,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added GAN Section" />
     <MESSAGE value="added experimental design" />
     <MESSAGE value="added missing sections" />
     <MESSAGE value="added design considerations" />
@@ -367,6 +373,7 @@
     <MESSAGE value="added citations" />
     <MESSAGE value="all bc figures cited, fixed experimental design setup" />
     <MESSAGE value="fixed future work iamge size" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed future work iamge size" />
+    <MESSAGE value="added our team to nav bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added our team to nav bar" />
   </component>
 </project>
