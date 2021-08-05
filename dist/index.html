@@ -745,19 +745,23 @@
                                             <img src="assets/img/results/overall_table.png" class="img-responsive" alt="" style="width:70%">
                                             <br>
                                             <caption><font size="2">Figure 4: All values are in average precision (AP). </font></caption>
+                                            <br><br><br>
                                         </div>
+
                                     </div>
-                                    <br>
+
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <img src="assets/img/results/NE-EM-baseline.png" class="img-responsive" alt="" style="width:80%">
+                                            <img src="assets/img/results/test%20batch%20gt.jpg" class="img-responsive" alt="" style="width:80%">
                                             <br>
-                                            <caption><font size="2">Figure 5: Sample test image from the baseline experiment of training on Northeast and testing on Eastern Midwest. The model falsely predicted an architecture to the right as 3 wind turbines. </font></caption>
+                                            <caption><font size="2">Figure 5: Sample ground truth images for testing batch from the GP GAN experiment of training on Northeast and testing on Northeast.  </font></caption>
                                         </div>
                                         <div class="col-md-6">
-                                            <img src="assets/img/results/NE-EM-adding-synthetic.png" class="img-responsive" alt="" style="width:80%">
+                                            <img src="assets/img/results/test%20batch%20pred.jpg" class="img-responsive" alt="" style="width:80%">
                                             <br>
-                                            <caption><font size="2">Figure 6: Sample test image from the adding synthetic experiment of training on Northeast and testing on Eastern Midwest. The adding synthetic prediction is able to achieve a higher precision. </font></caption>
+                                            <caption><font size="2">Figure 6: Sample predictions for testing batch from the GP GAN experiment of training on Northeast and testing on Northeast.
+                                                The YOLOv3 model achieves a precision of 17/18 or 0.94 (one of the predicted outputs in the bottom middle left is not a turbine)
+                                                and recall of 17/19 or 0.89 (misses a wind turbine in the top middle left and bottom middle right) </font></caption>
                                             <br>
                                             <br>
                                         </div>
@@ -785,29 +789,38 @@
                                             <br>
                                             <br>
                                         </div>
-                                        <!--<div class="col-md-6 my-auto">
-                                            <img src="assets/img/results/results-NW.png" class="img-responsive" alt="" style="width:100%">
-                                            <img src="assets/img/results/results-NW-table.png" class="img-responsive" alt="" style="width:100%">
+                                        <div class="col-md-6 my-auto">
+                                            <img src="assets/img/results/EM_graph.png" class="img-responsive" alt="" style="width:100%">
+                                            <img src="assets/img/results/EM_table.png" class="img-responsive" alt="" style="width:100%">
                                             <br>
                                             <caption><font size="2">Figure 8: Results of training with real images from Northwest. </font></caption>
                                             <br>
                                             <br>
                                             <br>
                                             <br>
-                                        </div>-->
+                                        </div>
                                     </div>
-                                    <div class="row">
+
+                                    <p class="text-muted" style="text-align: justify;">
+                                        As shown above, the model performs consistently worse in the cross-domain experience. However, the model
+                                        has the greatest average improvement in average precision from the addition of the GP GAN in these same cross-domain experiments, improving the overall cross-domain performance by 31% from the baseline.
+                                        In fact, the effect of the GP GAN is greatly noticed when considering the worst performance of each dataset. The GP GAN's worst performance of
+                                        0.638 Average Precision on the Train EM Val NE experiment is much greater than the other models worst performances, providing a sharp increase in performance.
+                                        Thus, it provides promise for bridging the gap in cross-domain experiments for different geographic regions.
+                                    </p>
+
+                                    <!--<div class="row">
                                         <div class="col-md-6 my-auto">
                                             <img src="assets/img/results/EM_graph.png" class="img-responsive" alt="" style="width:100%">
                                             <img src="assets/img/results/EM_table.png" class="img-responsive" alt="" style="width:100%">
                                             <caption><font size="2">Figure 9: Results of training with real images from Eastern Midwest</font></caption>
                                         </div>
                                         <div class="col-md-6">
-                                            <p class="text-muted" style="text-align: justify;">
-                                                As shown on the left and above, the model performs consistently worse when testing on Eastern Midwest, yet Eastern Midwest is also the region where the model
+                                            <p class="text-muted" style="text-align: center;">
+                                                As shown above, the model performs consistently worse when testing on Eastern Midwest, yet Eastern Midwest is also the region where the model
                                                 has the greatest average improvement in average precision from the addition of synthetic imagery. The exact model performance and improvement synthetic images can make hence depend on the details of specific geographic regions. <br><br> It is therefore possibly more challenging for the model to perform well in certain settings, such as when there are different designs of wind turbines in a region or when the region has more diverse geographic backgrounds. Despite these challenges, synthetic imagery was able to help bridge the gap and bring significant improvement to model performance. </p>
                                         </div>
-                                    </div>
+                                    </div>-->
         </section>
 
 
@@ -822,21 +835,25 @@
                         <div class="row">
                             <div class="col-md-1 my-auto"></div>
                             <div class="col-md-10 my-auto">
-                                <p class="text-muted" style="text-align: justify;">The results show that adding the curated synthetic imagery improves the performance of
-                                    our object detection model in all cases. This is especially the case when we have a cross domain setting (testing on an unseen region).
-                                    The performance increase is more limited in the within domain setting, where there the model is testing on a previously seen region. We
-                                    also explored the various ratios of real to synthetic imagery and found an optimal ratio. This method of synthetic generation is cheap
-                                    and fast to produce, allowing us to help an object detection model perform on new domains or when we lack training data, which is often the
-                                    case when we are trying to obtain information on energy infrastructure. With the aid of synthetic imagery, this method of collecting
-                                    locations of energy infrastructure could fill in the information gaps that energy access planners need when making decisions about electrification.</p>
+                                <p class="text-muted" style="text-align: justify;">The results show that adding the curated GP GAN generated imagery improves the performance of
+                                    our object detection model in all cases. This is especially the case in cross domain experiments (testing on an unseen region).
+                                    The performance increase is more limited in the within domain setting, where there the model is testing on a previously seen region and was already generally
+                                    performing well. Furthermore, our model not only improves upon the baseline, but also the synthetic CityEngine dataset, demonstrating
+                                    its ability to outperform other methods of synthetic image generation, especially in cross-domain experiments.
+                                    Given that our method of synthetic image generation is free and quick to produce, it evidently presents a simple and effective
+                                    method of enhancing object detection model performance on new domains. Furthermore, it can serve to supplement datasets that simply we lack training data, which is often the
+                                    case when we are trying to obtain information on energy infrastructure. With the aid of our synthetic imagery, this method of identifying and gathering
+                                    locations of energy infrastructure in a geographic region could bridge the information gaps that energy access planners need when making decisions about electrification.</p>
                             </div>
                             <div class="col-md-1 my-auto"></div>
                         </div>
                         <br>
                         <div class="row">
-                            <div class="col-md-12">
-                                <img src="assets/img/key_takeaways/takeaways_graph.png" class="img-responsive" alt="" style="width:50%">
-                                <img src="assets/img/key_takeaways/takeaways_table.png" class="img-responsive" alt="" style="width:50%">
+                            <div class="col-md-6 my-auto">
+                                <img src="assets/img/key_takeaways/takeaways_graph.png" class="img-responsive" alt="" style="width:100%">
+                            </div>
+                            <div class="col-md-6 my-auto">
+                                <img src="assets/img/key_takeaways/takeaways_table.png" class="img-responsive" alt="" style="width:100%">
                             </div>
                         </div>
                     </div>
