@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="footer">
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/team/Frankie.png" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added frankie face">
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -338,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628197790919</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="added frankie face">
+      <created>1628197886614</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1628197886614</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +362,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added missing sections" />
     <MESSAGE value="added design considerations" />
     <MESSAGE value="updated experimental setup" />
     <MESSAGE value="updated results section" />
@@ -381,6 +386,7 @@
     <MESSAGE value="fixed future work iamge size" />
     <MESSAGE value="added our team to nav bar" />
     <MESSAGE value="footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="footer" />
+    <MESSAGE value="added frankie face" />
+    <option name="LAST_COMMIT_MESSAGE" value="added frankie face" />
   </component>
 </project>
