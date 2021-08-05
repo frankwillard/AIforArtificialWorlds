@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="Updated key takeaways">
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/future_work/yolov4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/synthetic image examples.jpg" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="Removed unnecessary sections">
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/gan.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -136,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628116653958</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Removed unnecessary sections">
+      <created>1628127033693</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1628127033694</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +171,7 @@
     <MESSAGE value="Added images and figures" />
     <MESSAGE value="Added more images and figures" />
     <MESSAGE value="Updated key takeaways" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated key takeaways" />
+    <MESSAGE value="Removed unnecessary sections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary sections" />
   </component>
 </project>
