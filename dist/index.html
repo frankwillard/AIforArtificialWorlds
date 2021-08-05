@@ -422,7 +422,15 @@
                     </div>
                     <div class="col-md-6 my-auto">
                         <h5 class="service-heading">Location, Rotation, and Size of the Synthetic Turbines</h5>
-                        <p class="text-muted" style="text-align: justify;"> Lorem ipsum
+                        <p class="text-muted" style="text-align: justify;">
+                            The first step of our image generation pipeline is our image augmenter, which leads us to consider
+                            the location, size, and rotation of our synthetic turbines.
+                            The previous Bass Connections team modeled the size distribution of the CityEngine turbines after
+                            the size distribution of the real turbines.
+                            To ensure a controlled experiment, we sampled their location and sizing information to match the real distributions.
+                            While no rotation data was previously stored, we randomized the rotation of every windmill to allow the object detection model
+                            to become familiar with wind turbines from various angles and views.
+
                         </p>
                     </div>
                 </div>
@@ -448,7 +456,19 @@
                 <div class="row">
                     <div class="col-md-6 my-auto">
                         <h5 class="service-heading">Which Background Images to Use</h5>
-                        <p class="text-muted" style="text-align: justify;"> Lorem ipsum
+                        <p class="text-muted" style="text-align: justify;">
+                            Additionally, we had to choose which background images to have placed under our synthetic wind
+                            turbine models. In corresponding with the Bass Connections CityEngine experiments, we chose to
+                            use background imagery close to the real images in our testing set to maximize the similarity
+                            of our synthetic imagery with the target data.
+                            This methodology is consistent with real scenarios, as we will likely have access to unlabelled imagery
+                            or have the ability to collect unlabelled imagery from around the region we wish to test on for use as background images.
+                            Given the lack of manual labeling and filtering required as well as our ability to generate many sources to blend with each background image, this background data collection
+                            would ideally not be too time consuming.
+                            Using the background images close to our testing locations allows us to estimate the potential performance
+                            increase that the synthetic data can provide without introducing confounding variables such as a mismatch
+                            between the synthetic background image domain and the target domain (makes it difficult to attribute poor performance to
+                            the geographical background or synthetic data generation).
                         </p>
                     </div>
                     <div class="col-md-6 my-auto">
