@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added our team to nav bar">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="footer">
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/team/Frankie.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -331,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628196462204</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="footer">
+      <created>1628197790918</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1628197790919</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +356,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added experimental design" />
     <MESSAGE value="added missing sections" />
     <MESSAGE value="added design considerations" />
     <MESSAGE value="updated experimental setup" />
@@ -374,6 +380,7 @@
     <MESSAGE value="all bc figures cited, fixed experimental design setup" />
     <MESSAGE value="fixed future work iamge size" />
     <MESSAGE value="added our team to nav bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added our team to nav bar" />
+    <MESSAGE value="footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="footer" />
   </component>
 </project>
