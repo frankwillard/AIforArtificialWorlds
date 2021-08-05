@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added naip citation">
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/motivation/WIND TURBINE DETECTION WITH SYNTHETIC OVERHEAD IMAGERY (FINAL).pdf" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added igarss stuff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -367,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628199883970</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added igarss stuff">
+      <created>1628200441061</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1628200441061</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +391,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added takeaways" />
     <MESSAGE value="updated future work" />
     <MESSAGE value="added images for considerations" />
     <MESSAGE value="updated team" />
@@ -410,6 +415,7 @@
     <MESSAGE value="remove jordan github (until we get it)" />
     <MESSAGE value="added google scholar" />
     <MESSAGE value="added naip citation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added naip citation" />
+    <MESSAGE value="added igarss stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="added igarss stuff" />
   </component>
 </project>
