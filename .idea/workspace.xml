@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added igarss stuff">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added captions to takeaways">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -373,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628200441061</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="added captions to takeaways">
+      <created>1628201469535</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1628201469535</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +398,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated future work" />
     <MESSAGE value="added images for considerations" />
     <MESSAGE value="updated team" />
     <MESSAGE value="added dummy index html" />
@@ -416,6 +422,7 @@
     <MESSAGE value="added google scholar" />
     <MESSAGE value="added naip citation" />
     <MESSAGE value="added igarss stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="added igarss stuff" />
+    <MESSAGE value="added captions to takeaways" />
+    <option name="LAST_COMMIT_MESSAGE" value="added captions to takeaways" />
   </component>
 </project>
