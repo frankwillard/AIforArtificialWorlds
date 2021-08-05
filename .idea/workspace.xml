@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="remove jordan github (until we get it)">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added google scholar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -352,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628197951107</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="added google scholar">
+      <created>1628199265901</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1628199265903</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +377,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated experimental setup" />
     <MESSAGE value="updated results section" />
     <MESSAGE value="added takeaways" />
     <MESSAGE value="updated future work" />
@@ -395,6 +401,7 @@
     <MESSAGE value="footer" />
     <MESSAGE value="added frankie face" />
     <MESSAGE value="remove jordan github (until we get it)" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove jordan github (until we get it)" />
+    <MESSAGE value="added google scholar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added google scholar" />
   </component>
 </project>
