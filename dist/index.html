@@ -60,13 +60,13 @@
                         <div class="col-md-12">
                             <h3>Energy Access Planning</h3>
                             <p class="text-muted" style="text-align: justify">
-                                Access to electricity is correlated with improvements in income, education, maternal mortality, and gender
-                                equality. Around <a href="https://energyeducation.ca/encyclopedia/Access_to_electricity">1.2 billion people worldwide do not
-                                have electricity in their homes</a>, many of them located in Subsaharan Africa and Asia. Information on the location and
-                                characteristics of energy infrastructure comprising generation, transmission, and end-use consumption can inform policy makers
-                                in energy access planning and is critical to efficiently deploying energy resources. Such information will allow energy developers
-                                to understand how best serve the electricity needs of communities without access to electricity through either power grid
-                                extensions, micro/mini grids, or off-grid solutions.</p>
+                                Access to electricity is becoming increasingly critical, especially for promoting economic development, social equity,
+                                and improving quality of life. Further, it has been shown that electricity access is correlated with improvements in income,
+                                education, maternal mortality, and gender equality.
+                                Yet, worldwide, 16% of the global population, or <a href="https://energyeducation.ca/encyclopedia/Access_to_electricity">approximately 1.2 billion people, still don’t have access to electricity in their
+                                homes.</a> This map from the World Bank in 2017 highlights the uneven distribution of energy access, with the majority of those without
+                                electricity access concentrated in sub-Saharan Africa and Asia.
+                            </p>
                         </div>
                     </div>
                     <div class="row">
@@ -75,14 +75,17 @@
                             <caption><i>Image from: <a href="https://www.visualcapitalist.com/mapped-billion-people-without-access-to-electricity/">
                                 https://www.visualcapitalist.com/mapped-billion-people-without-access-to-electricity/</a></i></caption>
 
-                            <p style="margin-top: 2.5em" class="text-muted"  style="text-align: justify">However, energy data for developers is often outdated,
-                                incomplete, or inaccessible. This is a common issue for NGO’s and other developers of distributed energy resources (DER) and
-                                microgrids who are looking to provide additional electricity access. </p>
-                            <p class="text-muted"  style="text-align: justify"> One potential solution to this lack of energy infrastructure data is to automate
-                                the process of mapping energy infrastructure using deep learning in satellite imagery. Using deep learning, we can feed an overhead
-                                image to a model and make predictions about the contents or characteristics of the region photographed in the image. Using this
-                                tool, the resulting information on energy infrastructure can then help inform energy access planning, such as deciding the most
-                                cost-effective option among distributed generation, micro-grids, or grid extension strategies for electrification.</p>
+                            <p style="margin-top: 2.5em" class="text-muted"  style="text-align: justify">
+                                One of the first steps in improving energy access is acquiring comprehensive data on the existing energy infrastructure in an area.
+                                This includes information on the kind, quality, and location so that energy developers and policymakers can then strategically and
+                                optimally deploy energy resources. This information is key for helping them make decisions about where to prioritize development,
+                                and whether they should use grid extension, micro/minigrid development,  or offgrid options to bring electricity to communities.
+                                <br><br>
+                                However, this critical information for expanding energy accessibility is often unattainable or low quality.
+                                One potential solution to this issue is to automate the process of mapping energy infrastructure in satellite imagery. Using deep
+                                learning, we can input satellite imagery into an object detection model and make predictions about the characteristics and contents
+                                of the energy structure in the region featured in the image.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -93,25 +96,27 @@
 
                         <div class="col-md-6">
                             <img src="assets/img/motivation/object detection explanation.png" class="img-responsive" alt="" style="width:100%">
-                            <caption><i>Image from: <a href="https://towardsdatascience.com/yolo-v3-object-detection-53fb7d3bfe6b">
-                                You only look once, or YOLO</a></i></caption>
+                            <caption><i>Image from: <a href="https://www.researchgate.net/figure/Object-detection-in-a-dense-scene_fig4_329217107">
+                                ResearchGate</a></i></caption>
                         </div>
 
 
                         <div class="col-md-6">
                             <p class="text-muted" style="text-align: justify;">
-                                For this project, we focus on object detection, which is a combination of classification with object localization.
-                                The model analyzes images and predicts bounding boxes that surround each object within the image. It  also classifies
-                                each object, producing a confidence score corresponding to the level of certainty of its prediction. In the image on
-                                the left, the model predicted that there were different objects represented by each of the boxes shown in green, yellow
-                                and pink. The model also predicted that the objects within these colored boxes were a handbag, a car, and a person
-                                respectively. The model learns how to predict these boxes and classifications based on examples shown to it. These
-                                examples have labels (the object’s class and the location of the bounding box within the image) that we collectively
-                                refer to as ground truth.
+                                Our project has a particular emphasis on object detection, as we seek to improve the detection of energy infrastructure
+                                in different terrains as a part of expanding energy access data. Object detection is a combination of classification
+                                (identifying the correct object) and object localisation (identifying the location of a given object). Object detection
+                                models analyze the scenery of photos and generate bounding boxes around each object in the image. In doing so, it classifies
+                                each object and assigns a confidence score based on the accuracy of its prediction. The model predicted that each of the green,
+                                yellow, and pink boxes in the image on the left would indicate different objects, being a handbag, a car, and a handbag. Based
+                                on examples provided to it, the model learns how to predict these boxes and classes. We refer to these labeled images as ground
+                                truth as they contain boxes that denote every object's class and the location within the image.
                             </p>
                         </div>
                     </div>
                 </div>
+
+                <br><br>
 
                 <div class="row text-center">
                     <h3 class="service-heading">Applying Deep Learning to Overhead Imagery</h3>
@@ -125,29 +130,33 @@
                         <div class="row">
                             <div class="col-md-12 my-auto">
                                 <p class="text-muted" style="text-align: justify;">
-                                    After training this model, we could apply it to a collection of overhead imagery to locate and classify energy
-                                    infrastructure across a whole region. While we could demonstrate this for any number of types of electricity
-                                    infrastructure, we use wind turbines because they are relatively homogeneous in appearance, unlike power plants,
-                                    for example, which come in many different configurations. Outside of size differences, there is little variation
-                                    between types of wind turbines. We also start with data from within the US, because high resolution overhead imagery
-                                    data are readily available across the continental US.</p>
+                                    After training our object detection model, we can apply it to a collection of overhead imagery to locate and classify different energy infrastructure across entire regions.
+                                    In our experiments, we test our ability to detect wind turbines to maintain consistency with previous experiments.
+                                    While we could demonstrate energy infrastructure detection for any number of types of electricity infrastructure, wind turbines were chosen
+                                    due to their relatively homogeneous nature as opposed to different power plants and other energy infrastructure.
+                                    Ultimately, the methods used to improve object detection of energy infrastructure will be expanded to more energy
+                                    infrastructure, however, limiting the infrastructures tested helps to quickly provide performance benchmarks.
+                                </p>
                             </div>
                         </div>
                 </div>
 
+                <br><br>
 
                 <div class="row text-center">
+
                     <h3 class="service-heading">Challenges with Object Detection</h3>
+
+                    <br>
 
                     <div class="row">
                         <div class="col-md-12">
                             <h4>Problem 1: Lack of labeled data for rare objects</h4>
                             <p class="text-muted" style="text-align: justify;">
-                                Object detection networks, like the one used in this work, are notorious for their "data hunger," requiring
-                                <strong>large amounts of annotated training data to perform well</strong>. For common infrastructure like buildings
-                                and roads, there is ample real-world data available to train such models. However, energy infrastructure is
-                                <strong>rare</strong> both in number and density, so collecting and annotating large amounts of satellite images
-                                manually is <strong>expensive</strong> and time consuming.
+                                While the potential of object detection seems promising, it presents two main challenges. The first
+                                is that properly training the object detection model requires thousands of already labelled images.
+                                Because many types of energy infrastructure are rare objects, obtaining and annotating such a large
+                                quantity of satellite images featuring these infrastructures manually is expensive.
                             </p>
                         </div>
 
@@ -160,10 +169,11 @@
                         <div class="col-md-12">
                             <h4>Problem 2: Domain adaptation</h4>
                             <p class="text-muted" style="text-align: justify;">
-                                Typically our labeled training data are not from the same location as where we want to apply these techniques. However, object
-                                detection models poor performance on images that are from domians that are <strong>not similar</strong> to the ones that it
-                                has previously seen. In our case, this means the model will struggle when trying to apply it to <strong>new geographies</strong>
-                                and to <strong>different variations</strong> of styles of energy infrastructure.
+                                The second challenge we face is that these models are not capable of generalizing across dissimilar images yet.
+                                What this means is that if we train our model on a collection of images from one region, featuring images with
+                                similar background geographies, the model will then be able to perform fairly well on other images with those same
+                                physical background characteristics. However, if we then try to input images from a different region with different
+                                geographic characteristics, the models’ performance becomes significantly worse.
                             </p>
                         </div>
 
@@ -175,17 +185,18 @@
                     </div>
                 </div>
 
+                <br><br>
+
                 <div class="row text-center">
                     <h3 class="service-heading">Proposed solution: synthetic imagery</h3>
                     <div class="row">
                         <div class="col-md-12 my-auto">
 
                             <p class="text-muted" style="text-align: justify;">
-                                Since training data are difficult to collect, in this project we explore creating synthetic data to supplement the real data
-                                that are available. We do this by taking a real image without any energy infrastructure present and introducing a 3D model of
-                                an object of interest on top of that image as seen in the figure below. Then we position the camera in the overhead position
-                                and capture images in a manner that mimics the appearance of overhead imagery. Knowing where we placed the wind turbines in
-                                the synthetic image, we also generate ground truth labels for each of these images.
+                                Our proposed solution to address these two problems is to introduce synthetic images into our training dataset.
+                                The synthetic images supplement the original real satellite imagery dataset to create a larger dataset to train
+                                and test on. We generate these synthetic images by cropping the energy infrastructure out of satellite images
+                                and placing them on top of a real image without any energy infrastructure from one of the target geographic domains.
                             </p>
                         </div>
                         <div class="col-md-12">
@@ -243,14 +254,14 @@
                         <div class="row">
                             <div class="col-md-12 my-auto">
                                 <p class="text-muted" style="text-align: justify;">
-                                    Below you can see a summary of the experiments we ran to explore whether adding synthetic imagery
-                                    improves the performance of an object detection model across geographic domains. We first need to collect
-                                    real and synthetic imagery, and then we can create two datasets. One dataset contains purely real imagery,
-                                    while the second contains the same real imagery, but we add in some synthetic images. We can train
-                                    an object detection model on the first dataset, test its performance, and then do the same with the second
-                                    dataset, and finally compare the two performances. If the performance of the model is better when trained on
-                                    the dataset that had added synthetic imagery, we can say that the synthetic imagery helps the performance of
-                                    the model. In this section, we'll walk through each of the steps required to perform this experiment.
+                                    Below is a description of the experiments we conducted to evaluate if adding synthetic images to an object detection
+                                    algorithm enhances its performance across geographic domains. After gathering real images and generating synthetic images,
+                                    we can construct two datasets. The first dataset includes only real imagery, while the second dataset includes both real
+                                    and synthetic images. We can train an object detection model on the first dataset, test it, and then repeat the process with
+                                    the second dataset, comparing the results. If the model performs better when trained on a dataset with synthetic imagery, we
+                                    can conclude that the synthetic imagery aids the model's performance. Given the Bass Connections previous work creating a synthetic
+                                    dataset using CityEngine, we can also compare our synthetic dataset’s performance against theirs, to determine which synthetic dataset
+                                    best improves energy infrastructure detection.
                                 </p>
                             </div>
                             <div class="col-md-12 my-auto">
@@ -371,10 +382,21 @@
                 <br><br>
                 <div class="row">
                     <div class="col-md-12 my-auto">
-                        <p class="text-muted" style="text-align: justify;"> These synthetic images are simple, cheap, and fast to create. All we need are
-                            images for the background, and unlabeled imagery is far easier to acquire than labeled imagery. The rest of the process of generating the images and the labels is done automatically, making this a great
-                            alternative when we do not have enough real imagery or when it is time-consuming or expensive to collect. Below are some example
-                            synthetic images created from a variety of background images.
+                        <p class="text-muted" style="text-align: justify;">
+                            The synthetic images produced by the GP GAN are a quick and cost-effective solution to labeled datasets that
+                            are incommensurate with the needed training set size (for adequate performance). To produce our images, we simply need
+                            a few images with each energy infrastructure (already in training set) and background images. These images do not have
+                            to be labeled, and thus are much more abundant and available for easy use.
+                            We can then make simple crops and bounding boxes for sampled real wind turbines within minutes.
+                            Our automatic image augmenter then randomly samples sizes, locations, and rotations to generate hundreds of
+                            source images in seconds. Our generated sources (size = m) can be matched with any and all destinations (size = n)
+                            to create m times n output images that are produced by the GP GAN. Each image is blended in approximately 7 seconds, making
+                            our data pipeline an incredibly quick and resource efficient solution for data scarcity.
+                            For reference, if we generate 10 source images per destination image and download 100 destination images, we can create a dataset
+                            that includes 1000 images in less than 2 hours that includes a diversity in wind turbine location, rotation, size,
+                            and geographical background.
+                            Below are some example synthetic images created
+                            from a variety of background images.
                         </p>
                     </div>
                     <div class="col-md-12 my-auto">
@@ -399,11 +421,8 @@
                         <caption class="text-muted"><i>Figure: Bounding box size distribution of turbines in real imagery.</i></caption>
                     </div>
                     <div class="col-md-6 my-auto">
-                        <h5 class="service-heading">Size of the Synthetic Turbines</h5>
-                        <p class="text-muted" style="text-align: justify;"> The first consideration we have to make is what size to make the
-                            synthetic turbines. For this issue, we chose to model the size distribution of the synthetic turbines after the size
-                            distribution of the real turbines. We created a histogram of the size of the turbines in our real imagery,
-                            and modeled this in our synthetic imagery with multiple bins of uniform distributions.
+                        <h5 class="service-heading">Location, Rotation, and Size of the Synthetic Turbines</h5>
+                        <p class="text-muted" style="text-align: justify;"> Lorem ipsum
                         </p>
                     </div>
                 </div>
@@ -429,12 +448,7 @@
                 <div class="row">
                     <div class="col-md-6 my-auto">
                         <h5 class="service-heading">Which Background Images to Use</h5>
-                        <p class="text-muted" style="text-align: justify;"> We also have to choose which background images to have placed under our
-                            synthetic wind turbine models. We chose to collect background imagery close to the real images in our testing set so that our synthetic
-                            imagery would look as close as possible to the target data. We may likely be able to collect unlabelled imagery from around the region we wish to test
-                            on for use as background images. Using the background images close to our testing locations allows us to estimate the potential performance
-                            increase that the synthetic data can provide without adding in confounding variables such as a mismatch between the synthetic background
-                            image domain and the target domain.
+                        <p class="text-muted" style="text-align: justify;"> Lorem ipsum
                         </p>
                     </div>
                     <div class="col-md-6 my-auto">
@@ -594,6 +608,23 @@
                                     </div>
                                 </div>
                                 <br>
+
+                                <div class="row">
+                                    <h5 class="service-heading">YOLOv3</h5>
+                                    <div class="row">
+
+                                        <div class="col-md-6 my-auto">
+                                            <p class="text-muted" style="text-align: justify;">
+                                                A popular object detection model is YOLOv3. It is widely used because of its much faster object detection speed with
+                                                similar mAP as other well-performing models. Our previous Bass Connections team also used YOLOv3, which allowed us to make
+                                                direct comparisons between the performance of our models and theirs.
+                                            </p>
+                                        </div>
+
+                                        <div class="col-md-6 my-auto">
+                                            <img src="assets/img/methodology/yolov3.png" class="img-responsive" alt="Ratio Test Experimental Design" style="width:100%">
+                                        </div>
+                                    </div>
 
                             </div>
                         </div>
@@ -795,6 +826,12 @@
                             <div class="col-md-12 my-auto">
                                 <ol class="text-muted" style="text-align: justify;">
                                     <li>
+                                        Given various time constraints in our project, we would like to attempt more hyperparameter tuning in the
+                                        image augmentation process to ensure the images come from a realistic sizing distribution and blending processes
+                                        to improve the realisticness of our generated images and increase blending.
+                                    </li>
+                                    <br>
+                                    <li>
                                         Apply these techniques to <strong>detect other types of energy infrastructure</strong>. Because high voltage transmission towers are
                                         similar structure to wind turbines, we can easily adapt our synthetic image generation process for transmission towers. We could then
                                         test this synthetic imagery in the same manner as what we performed for the synthetic imagery of wind turbines, and see if this method
@@ -810,25 +847,6 @@
                                     </div>
                                     <br>
                                     <li>
-                                        Investigate few shot learning, where we use <strong>small amounts of real images and large amounts of synthetic data</strong> to adapt our object detection
-                                        model to any region that we choose.
-                                    </li>
-                                    <br>
-                                    <div class= "figure-img">
-                                        <img src="assets/img/future_work/Few Shot Learning.png" class="img-responsive" alt="" style="width:100%">
-                                        <br>
-                                        <caption><i>Figure: Guo, Y., Codella, N., Karlinsky, L., Smith, J., Simunic, T., & Feris, R. (2019). A New Benchmark for Evaluation of Cross-Domain Few-Shot Learning. ArXiv, abs/1912.07200. </i></caption>
-                                    </div>
-                                    <br>
-                                    <li>
-                                        We would also like to explore <strong>more methods of generating synthetic data</strong>. One method in particular would be using
-                                        generative adversarial networks (GANs) to generate synthetic imagery with deep learning. This could look more realistic
-                                        than the current synthetic imagery, since the synthetic image generation process would learn from the real imagery we have. This could
-                                        enable incorporating the context of the energy infrastructure more accurately. For example, in our current image generation strategy,
-                                        we place the wind turbines randomly within the image. This could be on top of a forest or in a car park rather than where we typically
-                                        find them: in a clearing with an access road nearby.
-                                    </li>
-                                    <li>
                                         We would like to investigate the performance of our synthetic dataset on the YOLOv4 object detection model. YOLOv4 has demonstrated that
                                         its AP (Average Precision) has increased by 10% since the YOLOv3 model. Thus, to further improve the wind turbine detection in in-domain
                                         and cross-domain experiments, further experimentation with our real and synthetic datasets should be performed with the newer, state-of-the-art
@@ -837,6 +855,16 @@
                                     <br>
                                     <div class= "figure-img">
                                         <img src="assets/img/future_work/yolov4.png" class="img-responsive" alt="" style="width:100%">
+                                        <br>
+                                        <caption><i>Figure: Guo, Y., Codella, N., Karlinsky, L., Smith, J., Simunic, T., & Feris, R. (2019). A New Benchmark for Evaluation of Cross-Domain Few-Shot Learning. ArXiv, abs/1912.07200. </i></caption>
+                                    </div>
+                                    <li>
+                                        Investigate few shot learning, where we use <strong>small amounts of real images and large amounts of synthetic data</strong> to adapt our object detection
+                                        model to any region that we choose.
+                                    </li>
+                                    <br>
+                                    <div class= "figure-img">
+                                        <img src="assets/img/future_work/Few Shot Learning.png" class="img-responsive" alt="" style="width:100%">
                                         <br>
                                         <caption><i>Figure: Guo, Y., Codella, N., Karlinsky, L., Smith, J., Simunic, T., & Feris, R. (2019). A New Benchmark for Evaluation of Cross-Domain Few-Shot Learning. ArXiv, abs/1912.07200. </i></caption>
                                     </div>
@@ -1092,6 +1120,38 @@
                             <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
                             <h4>Caroline Tang</h4>
                             <p class="text-muted">Lead Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/Frankie_Portrait.jpg" alt="..." />
+                            <h4>Kyle Bradbury</h4>
+                            <p class="text-muted">Project Lead</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/frank-willard"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4>Jordan Malof</h4>
+                            <p class="text-muted">Project Lead</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <h4>Wayne Hu</h4>
+                            <p class="text-muted">Project Manager</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
