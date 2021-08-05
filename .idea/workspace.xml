@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated acknowledgements">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated precision and recall">
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -281,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628193142247</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="updated precision and recall">
+      <created>1628193339372</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1628193339372</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +306,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated picture" />
     <MESSAGE value="Add electricity image" />
     <MESSAGE value="Added images and figures" />
     <MESSAGE value="Added more images and figures" />
@@ -324,6 +330,7 @@
     <MESSAGE value="added meta back" />
     <MESSAGE value="updated team pictures" />
     <MESSAGE value="updated acknowledgements" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated acknowledgements" />
+    <MESSAGE value="updated precision and recall" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated precision and recall" />
   </component>
 </project>
