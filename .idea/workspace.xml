@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated future work">
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/backgrounds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/size_distribution.png" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added images for considerations">
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/team/Jordan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/team/Kyle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/team/Wayne.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -35,11 +36,11 @@
       <recent name="$PROJECT_DIR$/dist/assets/img/team" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist/assets/img/team" />
       <recent name="$PROJECT_DIR$/dist/assets/img/results" />
       <recent name="$PROJECT_DIR$/dist/assets/img/methodology" />
       <recent name="$PROJECT_DIR$/dist/assets/img/motivation" />
       <recent name="$PROJECT_DIR$/dist/assets/img/key_takeaways" />
-      <recent name="$PROJECT_DIR$/dist/assets/img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -199,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628145366155</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added images for considerations">
+      <created>1628145571969</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1628145571970</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,6 +245,7 @@
     <MESSAGE value="updated results section" />
     <MESSAGE value="added takeaways" />
     <MESSAGE value="updated future work" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated future work" />
+    <MESSAGE value="added images for considerations" />
+    <option name="LAST_COMMIT_MESSAGE" value="added images for considerations" />
   </component>
 </project>
