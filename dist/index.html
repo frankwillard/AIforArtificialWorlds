@@ -124,11 +124,17 @@
 
                             <div class="col-md-12 my-auto">
                                 <img src="assets/img/motivation/apply deep learning model to overhead imagery.png" class="img-responsive" alt="apply deep learning" style="width:90%">
+                                <br>
+                                <caption><i>Image from: <a href="https://duke-bc-dl-for-energy-infrastructure.github.io/">
+                                    2020-2021 Bass Connections team.</a></i></caption>
+
                             </div>
                         </div>
 
                         <div class="row">
+
                             <div class="col-md-12 my-auto">
+                                <br>
                                 <p class="text-muted" style="text-align: justify;">
                                     After training our object detection model, we can apply it to a collection of overhead imagery to locate and classify different energy infrastructure across entire regions.
                                     In our experiments, we test our ability to detect wind turbines to maintain consistency with previous experiments.
@@ -180,7 +186,10 @@
                         <div class="col-md-12">
                             <img src="assets/img/motivation/domain_adaptation_updated.png" class="img-responsive" alt=""style="width:90%; height:90%"><br>
                             <caption><i>Figure: Example of the domain adaptation challenge, for a model trained on images with geographical features of the images in the
-                                source domain (forest & grasslands) that underperforms when tested on images with different background in the target domain (desert)</i></caption>
+                                source domain (forest & grasslands) that underperforms when tested on images with different background in the target domain (desert)
+                            <br>
+                                Image from: <a href="https://duke-bc-dl-for-energy-infrastructure.github.io/">
+                                    2020-2021 Bass Connections team.</a></i></caption>
                         </div>
                     </div>
                 </div>
@@ -228,7 +237,9 @@
                             In 2020-2021, the Bass Connections project team extended this work, trying to improve the model’s ability to accurately detect rare objects in diverse
                             locations. After collecting satellite imagery from various domains and clustering them, they experimented with generating synthetic imagery by taking
                             satellite images featuring no energy infrastructure and placing 3D models of the object of interest on top of the image, and capturing a photo that
-                            mimicked the appearance of a satellite image.
+                            mimicked the appearance of a satellite image. <a
+                            href="https://duke-bc-dl-for-energy-infrastructure.github.io/">[2020-21
+                            Bass Connections Team]</a>
                             In our project, we build upon this progress and try to improve the 2020 Bass Connections team's ability to enhance energy infrastructure detection
                             in new, diverse locations.
                         </p>
@@ -401,7 +412,7 @@
                     </div>
                     <div class="col-md-12 my-auto">
                         <img src="assets/img/methodology/synthetic%20image%20examples.jpg" class="img-responsive" alt="" style="width:80%;"><br>
-                        <caption class="text-muted"><i>Figure: Our synthetic images contain a variety of background images and camera angles. They look fairly similar to our real imagery.</i></caption>
+                        <caption class="text-muted"><i>Figure: Our synthetic images contain a variety of background images, source turbines, and turbine orientations.</i></caption>
                     </div>
                 </div>
                 <br><br>
@@ -571,7 +582,7 @@
                                                 the largest gain in performance (if any). Adding too much synthetic data could lead to overfitting to synthetic data and any irregularities within
                                                 the synthetic data or differences with regular images would be exacerbated such the object detection model may perform worse.
                                                 However, adding too little synthetic data will have a negligible effect on performance.
-                                                The 2019-2020 Bass Connections team designed an experiment in which they tested ratios of 1:0, 1:0.5, 1:0.75,
+                                                The 2020-2021 Bass Connections team designed an experiment in which they tested ratios of 1:0, 1:0.5, 1:0.75,
                                                 1:1, and 1:2 real to synthetic ratios. After conducting these experiments, they found that 1:0.75 yields the greatest performance
                                                 as measured by average precision. Therefore, to maintain similarity to the Bass Connections team, we design our experiments using the 1:0.75 ratio.
                                                 This ratio allows for fair comparison of our synthetic data generation with the Bass Connections team, however, in the future, we
@@ -581,6 +592,8 @@
 
                                         <div class="col-md-6 my-auto">
                                             <img src="assets/img/methodology/Ratio Test Experimental Design.png" class="img-responsive" alt="Ratio Test Experimental Design" style="width:100%">
+                                            <caption><i>Image from: <a href="https://duke-bc-dl-for-energy-infrastructure.github.io/">
+                                                2020-2021 Bass Connections team.</a></i></caption>
                                         </div>
                                     </div>
 
