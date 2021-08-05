@@ -323,7 +323,7 @@
                 </div>
 
                 <br><br>
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-md-4 my-auto">
                         <p class="text-muted" style="text-align: justify;"> We can repeat this process but remove the background images, and color
                             in the turbine models as black to retrieve information on where the turbine models are located. The black pixels in these
@@ -335,7 +335,7 @@
                         <img src="assets/img/methodology/Generating Annotations.png" class="img-responsive" alt="" style="width:100%">
                         <caption><i>Figure: Side-by-side of an RGB image with its corresponding black-and-white label.</i></caption>
                     </div>
-                </div>
+                </div>-->
                 <br><br>
                 <div class="row">
                     <div class="col-md-12 my-auto">
@@ -346,7 +346,7 @@
                         </p>
                     </div>
                     <div class="col-md-12 my-auto">
-                        <img src="assets/img/methodology/Example Synthetic Images.png" class="img-responsive" alt="" style="width:80%;"><br>
+                        <img src="assets/img/methodology/synthetic%20image%20examples.jpg" class="img-responsive" alt="" style="width:80%;"><br>
                         <caption class="text-muted"><i>Figure: Our synthetic images contain a variety of background images and camera angles. They look fairly similar to our real imagery.</i></caption>
                     </div>
                 </div>
@@ -376,7 +376,7 @@
                     </div>
                 </div>
                 <br>
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-md-6 my-auto">
                         <h5 class="service-heading">Angle of the Camera</h5>
                         <p class="text-muted" style="text-align: justify;"> The next decision we had to make about the synthetic imagery design was
@@ -392,13 +392,9 @@
                         <img src="assets/img/methodology/Angle of Camera 2.png" class="img-responsive" alt="" style="width:100%">
                         <caption class="text-muted"><i>Figure: Bounding box size distribution of turbines in real imagery.</i></caption>
                     </div>
-                </div>
+                </div>-->
                 <br>
                 <div class="row">
-                    <div class="col-md-6 my-auto">
-                        <img src="assets/img/methodology/Nearby Background Image.png" class="img-responsive" alt="" style="width:100%">
-                        <caption class="text-muted"><i>Figure: Test image and nearby collected background image.</i></caption>
-                    </div>
                     <div class="col-md-6 my-auto">
                         <h5 class="service-heading">Which Background Images to Use</h5>
                         <p class="text-muted" style="text-align: justify;"> We also have to choose which background images to have placed under our
@@ -409,12 +405,17 @@
                             image domain and the target domain.
                         </p>
                     </div>
+                    <div class="col-md-6 my-auto">
+                        <img src="assets/img/methodology/Nearby Background Image.png" class="img-responsive" alt="" style="width:100%">
+                        <caption class="text-muted"><i>Figure: Test image and nearby collected background image.</i></caption>
+                    </div>
                 </div>
 
                 <hr class="divider light my-4" />
 
                 <div class="row">
                     <div class="col-md-12 my-auto">
+                        <!--
                         <h2 class="service-heading">Constructing the Datasets</h2>
 
                         <div class="row">
@@ -449,7 +450,7 @@
                                     1:1, and 1:2 real to synthetic ratios. After conducting these experiments, we found that 1:0.75 yields the greatest performance
                                     as measured by average precision. Therefore, we design our experiments using the 1:0.75 ratio.  </p>
                             </div>
-                        </div>
+                        </div>-->
 
                         <hr class="divider light my-4" />
                         <div class="row">
@@ -769,6 +770,18 @@
                                         we place the wind turbines randomly within the image. This could be on top of a forest or in a car park rather than where we typically
                                         find them: in a clearing with an access road nearby.
                                     </li>
+                                    <li>
+                                        We would like to investigate the performance of our synthetic dataset on the YOLOv4 object detection model. YOLOv4 has demonstrated that
+                                        its AP (Average Precision) has increased by 10% since the YOLOv3 model. Thus, to further improve the wind turbine detection in in-domain
+                                        and cross-domain experiments, further experimentation with our real and synthetic datasets should be performed with the newer, state-of-the-art
+                                        object detection model. Additionally, cross-validation of our synthetic imagery techniques using different object detection models including YOLOv4 and EfficientDet could strengthen our results.
+                                    </li>
+                                    <br>
+                                    <div class= "figure-img">
+                                        <img src="assets/img/future_work/yolov4.png" class="img-responsive" alt="" style="width:100%">
+                                        <br>
+                                        <caption><i>Figure: Guo, Y., Codella, N., Karlinsky, L., Smith, J., Simunic, T., & Feris, R. (2019). A New Benchmark for Evaluation of Cross-Domain Few-Shot Learning. ArXiv, abs/1912.07200. </i></caption>
+                                    </div>
                                 </ol>
                             </div>
                         </div>
@@ -1003,7 +1016,7 @@
                             <p class="text-muted">Lead Designer</p>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/frank-willard"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4">
