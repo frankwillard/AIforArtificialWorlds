@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated github link">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated few shot learning">
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,13 +56,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00002" summary="Updated names">
-      <created>1627703227679</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1627703227679</updated>
     </task>
     <task id="LOCAL-00003" summary="Commented out sections not used">
       <created>1628050778778</created>
@@ -400,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628363011298</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="updated few shot learning">
+      <created>1628367622133</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1628367622136</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,9 +440,9 @@
     <MESSAGE value="added igarss stuff" />
     <MESSAGE value="added captions to takeaways" />
     <MESSAGE value="added GAN captions" />
-    <MESSAGE value="updated few shot learning" />
     <MESSAGE value="updated acknowledgements" />
     <MESSAGE value="updated github link" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated github link" />
+    <MESSAGE value="updated few shot learning" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated few shot learning" />
   </component>
 </project>
