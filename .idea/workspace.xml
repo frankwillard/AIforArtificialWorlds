@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="fixed links">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="slight text edits made to experimental considerations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -57,13 +57,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00014" summary="Added GAN Section">
-      <created>1628128109482</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1628128109483</updated>
     </task>
     <task id="LOCAL-00015" summary="added experimental design">
       <created>1628131283257</created>
@@ -401,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628635061566</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="slight text edits made to experimental considerations">
+      <created>1628635285146</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1628635285147</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +419,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="all bc figures cited, fixed experimental design setup" />
     <MESSAGE value="fixed future work iamge size" />
     <MESSAGE value="added our team to nav bar" />
     <MESSAGE value="footer" />
@@ -444,6 +443,7 @@
     <MESSAGE value="updated synthetic imagery" />
     <MESSAGE value="added sources for GAN" />
     <MESSAGE value="fixed links" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed links" />
+    <MESSAGE value="slight text edits made to experimental considerations" />
+    <option name="LAST_COMMIT_MESSAGE" value="slight text edits made to experimental considerations" />
   </component>
 </project>
