@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated challenges with object detection">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated domain adaptation">
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,13 +56,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00009" summary="Add electricity image">
-      <created>1628103559939</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1628103559940</updated>
     </task>
     <task id="LOCAL-00010" summary="Added images and figures">
       <created>1628112923620</created>
@@ -400,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628569997339</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="updated domain adaptation">
+      <created>1628570417997</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1628570417999</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated team pictures" />
     <MESSAGE value="updated precision and recall" />
     <MESSAGE value="removed contact us" />
     <MESSAGE value="updated captions" />
@@ -443,6 +442,7 @@
     <MESSAGE value="updated object detection" />
     <MESSAGE value="updated applying deep learning" />
     <MESSAGE value="updated challenges with object detection" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated challenges with object detection" />
+    <MESSAGE value="updated domain adaptation" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated domain adaptation" />
   </component>
 </project>
