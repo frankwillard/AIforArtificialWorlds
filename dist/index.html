@@ -184,11 +184,13 @@
                         <div class="col-md-12">
                             <h4>Problem 2: Domain adaptation</h4>
                             <p class="text-muted" style="text-align: justify;">
-                                The second challenge we face is that these models are not capable of generalizing across dissimilar images yet.
+                                The second challenge we face is that in training an object detection model to detect energy infrastructure in certain regions,
+                                our training set and testing set must come from different locations and thus may have differences in geographical background and other environmental factors.
+                                Without being properly trained for the test setting, object detection models are not great at generalizing across dissimilar images yet.
                                 What this means is that if we train our model on a collection of images from one region, featuring images with
                                 similar background geographies, the model will then be able to perform fairly well on other images with those same
                                 physical background characteristics. However, if we then try to input images from a different region with different
-                                geographic characteristics, the models’ performance becomes significantly worse.
+                                geographic characteristics, the model's performance becomes significantly worse.
                             </p>
                         </div>
 

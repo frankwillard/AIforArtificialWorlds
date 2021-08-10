@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated applying deep learning">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated challenges with object detection">
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,13 +56,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00008" summary="Updated picture">
-      <created>1628103161475</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1628103161476</updated>
     </task>
     <task id="LOCAL-00009" summary="Add electricity image">
       <created>1628103559939</created>
@@ -401,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628569223543</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="updated challenges with object detection">
+      <created>1628569997338</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1628569997339</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added meta back" />
     <MESSAGE value="updated team pictures" />
     <MESSAGE value="updated precision and recall" />
     <MESSAGE value="removed contact us" />
@@ -444,6 +442,7 @@
     <MESSAGE value="updated energy access planning" />
     <MESSAGE value="updated object detection" />
     <MESSAGE value="updated applying deep learning" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated applying deep learning" />
+    <MESSAGE value="updated challenges with object detection" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated challenges with object detection" />
   </component>
 </project>
