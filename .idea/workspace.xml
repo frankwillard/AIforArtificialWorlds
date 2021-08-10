@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated synthetic imagery">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added sources for GAN">
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,13 +56,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00012" summary="Updated key takeaways">
-      <created>1628116653958</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1628116653958</updated>
     </task>
     <task id="LOCAL-00013" summary="Removed unnecessary sections">
       <created>1628127033693</created>
@@ -401,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628626114377</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="added sources for GAN">
+      <created>1628634913819</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1628634913822</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated captions" />
     <MESSAGE value="added citations" />
     <MESSAGE value="all bc figures cited, fixed experimental design setup" />
     <MESSAGE value="fixed future work iamge size" />
@@ -444,6 +442,7 @@
     <MESSAGE value="updated domain adaptation" />
     <MESSAGE value="fixed typo" />
     <MESSAGE value="updated synthetic imagery" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated synthetic imagery" />
+    <MESSAGE value="added sources for GAN" />
+    <option name="LAST_COMMIT_MESSAGE" value="added sources for GAN" />
   </component>
 </project>
