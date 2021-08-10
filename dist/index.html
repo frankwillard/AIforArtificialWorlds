@@ -215,8 +215,10 @@
                             <p class="text-muted" style="text-align: justify;">
                                 Our proposed solution to address these two problems is to introduce synthetic images into our training dataset.
                                 The synthetic images supplement the original real satellite imagery dataset to create a larger dataset to train
-                                and test on. We generate these synthetic images by cropping the energy infrastructure out of satellite images
-                                and placing them on top of a real image without any energy infrastructure from one of the target geographic domains.
+                                our object detection model, diversifying the geographical background and orientation of energy infrastructure that the model
+                                sees. We generate these synthetic images by cropping the energy infrastructure out of satellite images
+                                and using a Generative Adversarial Network to blend them into a real image without any energy infrastructure
+                                from one of the target geographic domains.
                             </p>
                         </div>
                         <div class="col-md-12">

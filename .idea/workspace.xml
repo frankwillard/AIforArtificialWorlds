@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated domain adaptation">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="fixed typo">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,13 +57,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00010" summary="Added images and figures">
-      <created>1628112923620</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1628112923621</updated>
     </task>
     <task id="LOCAL-00011" summary="Added more images and figures">
       <created>1628114237462</created>
@@ -400,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628570417999</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="fixed typo">
+      <created>1628570926281</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1628570926282</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +419,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated precision and recall" />
     <MESSAGE value="removed contact us" />
     <MESSAGE value="updated captions" />
     <MESSAGE value="added citations" />
@@ -443,6 +443,7 @@
     <MESSAGE value="updated applying deep learning" />
     <MESSAGE value="updated challenges with object detection" />
     <MESSAGE value="updated domain adaptation" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated domain adaptation" />
+    <MESSAGE value="fixed typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed typo" />
   </component>
 </project>
