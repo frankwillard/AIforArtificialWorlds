@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="fixed typo">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated synthetic imagery">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -57,13 +57,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00011" summary="Added more images and figures">
-      <created>1628114237462</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1628114237462</updated>
     </task>
     <task id="LOCAL-00012" summary="Updated key takeaways">
       <created>1628116653958</created>
@@ -401,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628570926282</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="updated synthetic imagery">
+      <created>1628626114375</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1628626114377</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +419,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed contact us" />
     <MESSAGE value="updated captions" />
     <MESSAGE value="added citations" />
     <MESSAGE value="all bc figures cited, fixed experimental design setup" />
@@ -444,6 +443,7 @@
     <MESSAGE value="updated challenges with object detection" />
     <MESSAGE value="updated domain adaptation" />
     <MESSAGE value="fixed typo" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed typo" />
+    <MESSAGE value="updated synthetic imagery" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated synthetic imagery" />
   </component>
 </project>
