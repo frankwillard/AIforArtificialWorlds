@@ -166,8 +166,12 @@
                             <p class="text-muted" style="text-align: justify;">
                                 While the potential of object detection seems promising, it presents two main challenges. The first
                                 is that properly training the object detection model requires thousands of already labelled images.
+                                <a href="https://github.com/AlexeyAB/darknet">According to Alexey Bochkovskiy</a>, developer of the highly used and precise YOLOv4 object detection model,
+                                it is ideal to have at least 2000 different images for each class to account for the different sizes, shapes, sides,
+                                angles, lighting, backgrounds, and other factors that could vary from image to image. Thus, in order to make the object detection model
+                                best generalize, the model will require 1000s of training images per energy infrastructure.
                                 Because many types of energy infrastructure are rare objects, obtaining and annotating such a large
-                                quantity of satellite images featuring these infrastructures manually is expensive.
+                                quantity of satellite images featuring these infrastructures manually is expensive in terms of both time and cost.
                             </p>
                         </div>
 
