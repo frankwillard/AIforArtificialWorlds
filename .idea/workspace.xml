@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated GANs">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated yolov3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -57,13 +57,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00004" summary="Added BC work as template">
-      <created>1628051016570</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1628051016570</updated>
     </task>
     <task id="LOCAL-00005" summary="Added BC work as template">
       <created>1628051117191</created>
@@ -401,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628367785788</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="updated yolov3">
+      <created>1628368310576</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1628368310580</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +419,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved html" />
     <MESSAGE value="fixed meta" />
     <MESSAGE value="added slash" />
     <MESSAGE value="remove meta" />
@@ -444,6 +443,7 @@
     <MESSAGE value="updated github link" />
     <MESSAGE value="updated few shot learning" />
     <MESSAGE value="updated GANs" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated GANs" />
+    <MESSAGE value="updated yolov3" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated yolov3" />
   </component>
 </project>
