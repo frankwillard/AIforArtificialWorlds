@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="removed &quot;[source]&quot;">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="added abstract">
+      <change afterPath="$PROJECT_DIR$/dist/assets/img/methodology/grid.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -41,8 +42,8 @@
       <recent name="$PROJECT_DIR$/dist/assets/img/team" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/dist/assets/img/motivation" />
       <recent name="$PROJECT_DIR$/dist/assets/img/methodology" />
+      <recent name="$PROJECT_DIR$/dist/assets/img/motivation" />
       <recent name="$PROJECT_DIR$/dist/assets/img/team" />
       <recent name="$PROJECT_DIR$/dist/assets/img/results" />
       <recent name="$PROJECT_DIR$/dist/assets/img/key_takeaways" />
@@ -57,13 +58,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00017" summary="added design considerations">
-      <created>1628140243077</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1628140243078</updated>
     </task>
     <task id="LOCAL-00018" summary="updated experimental setup">
       <created>1628140950833</created>
@@ -401,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628650703553</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="added abstract">
+      <created>1628651006520</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1628651006521</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +420,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="footer" />
     <MESSAGE value="added frankie face" />
     <MESSAGE value="remove jordan github (until we get it)" />
     <MESSAGE value="added google scholar" />
@@ -444,6 +444,7 @@
     <MESSAGE value="slight text edits made to experimental considerations" />
     <MESSAGE value="edited design considerations" />
     <MESSAGE value="removed &quot;[source]&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed &quot;[source]&quot;" />
+    <MESSAGE value="added abstract" />
+    <option name="LAST_COMMIT_MESSAGE" value="added abstract" />
   </component>
 </project>
