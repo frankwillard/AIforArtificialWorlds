@@ -28,6 +28,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#abstract">Abstract</a></li>
                         <li class="nav-item"><a class="nav-link" href="#motivation">Motivation</a></li>
                         <li class="nav-item"><a class="nav-link" href="#methodology">Methodology</a></li>
                         <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
@@ -48,6 +49,30 @@
             </div>
         </header>
         <!-- Motivation -->
+        <section class="page-section" id="abstract">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Abstract</h2>
+
+                        <hr class="divider light my-4" />
+                    </div>
+                    <p class="text-muted" style="text-align: justify">
+                        Recent advances in the ability of object detection to accurately identify objects in real-time has facilitated new developments
+                        in computer vision, including in autonomous vehicles, facial recognition, and medical imaging. Given the abundance of aerial and
+                        satellite imagery available, object detection can be applied to overhead imagery to quickly and automatically map out regions,
+                        providing a geographical distribution of specified objects of interest. However, object detection models often require an abundance
+                        of diverse, high quality, and manually labeled imagery, which is expensive to filter and label. Thus, we generated synthetic images
+                        using image blending to reduce the costs of exhaustive data collection and annotation. We employed the state-of-the-art GP GAN model
+                        to create realistic synthetic imagery that integrated objects within many real, unlabeled background images. Our overhead imagery dataset
+                        was separated into its different geographical regions such that we performed within-domain and cross-domain experiments to evaluate the
+                        value of adding synthetic imagery in improving the adaptability of object detection across different regions. Our results suggest that
+                        adding GAN generated synthetic imagery to our baseline training dataset improves average precision from the baseline and slightly outperforms
+                        synthetic imagery created with 3D models of energy infrastructure.
+                    </p>
+                </div>
+            </div>
+        </section>
         <section class="page-section" id="motivation">
             <div class="container">
                 <div class="row justify-content-center">
@@ -417,7 +442,7 @@
                             We can then make simple crops and bounding boxes for sampled real wind turbines within minutes.
                             Our automatic image augmenter then randomly samples sizes, locations, and rotations to generate hundreds of
                             source images in seconds. Our generated sources (size = m) can be matched with any and all destinations (size = n)
-                            to create m times n output images that are produced by the GP GAN. Each image is blended in approximately 7 seconds, making
+                            to create as much as m times n output images that are produced by the GP GAN. Each image is blended in approximately 7 seconds, making
                             our data pipeline an incredibly quick and resource efficient solution for data scarcity.
                             For reference, if we generate 10 source images per destination image and download 100 destination images, we can create a dataset
                             that includes 1000 images in less than 2 hours that includes a diversity in wind turbine location, rotation, size,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="edited design considerations">
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="removed &quot;[source]&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
     </list>
@@ -57,13 +57,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00016" summary="added missing sections">
-      <created>1628139289904</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1628139289906</updated>
     </task>
     <task id="LOCAL-00017" summary="added design considerations">
       <created>1628140243077</created>
@@ -401,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628635586649</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="removed &quot;[source]&quot;">
+      <created>1628650703550</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1628650703553</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +419,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added our team to nav bar" />
     <MESSAGE value="footer" />
     <MESSAGE value="added frankie face" />
     <MESSAGE value="remove jordan github (until we get it)" />
@@ -444,6 +443,7 @@
     <MESSAGE value="fixed links" />
     <MESSAGE value="slight text edits made to experimental considerations" />
     <MESSAGE value="edited design considerations" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited design considerations" />
+    <MESSAGE value="removed &quot;[source]&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed &quot;[source]&quot;" />
   </component>
 </project>
