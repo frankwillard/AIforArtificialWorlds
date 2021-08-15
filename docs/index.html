@@ -58,17 +58,7 @@
                         <hr class="divider light my-4" />
                     </div>
                     <p class="text-muted" style="text-align: justify">
-                        Recent advances in the ability of object detection to accurately identify objects in real-time has facilitated new developments
-                        in computer vision, including in autonomous vehicles, facial recognition, and medical imaging. Given the abundance of aerial and
-                        satellite imagery available, object detection can be applied to overhead imagery to quickly and automatically map out regions,
-                        providing a geographical distribution of specified objects of interest. However, object detection models often require an abundance
-                        of diverse, high quality, and manually labeled imagery, which is expensive to filter and label. Thus, we generated synthetic images
-                        using image blending to reduce the costs of exhaustive data collection and annotation. We employed the state-of-the-art GP GAN model
-                        to create realistic synthetic imagery that integrated objects within many real, unlabeled background images. Our overhead imagery dataset
-                        was separated into its different geographical regions such that we performed within-domain and cross-domain experiments to evaluate the
-                        value of adding synthetic imagery in improving the adaptability of object detection across different regions. Our results suggest that
-                        adding GAN generated synthetic imagery to our baseline training dataset improves average precision from the baseline and slightly outperforms
-                        synthetic imagery created with 3D models of energy infrastructure.
+                        Recent advances in the ability of object detection to accurately identify objects in real-time has facilitated new developments in computer vision, including in autonomous vehicles, facial recognition, and medical imaging. Given the abundance of aerial and satellite imagery available, object detection can be applied to overhead imagery to quickly and automatically map out regions, providing a geographical distribution of specified objects of interest. However, object detection models often require an abundance of diverse, high quality, and manually labeled imagery, which is expensive to filter and label. Thus, we generated synthetic images and their labels using image blending to reduce the costs of data collection and annotation. We employed the state-of-the-art GP-GAN model to create realistic synthetic imagery that integrated objects within many real, unlabeled background images. Our overhead imagery dataset was separated into its different geographical regions such that we performed experiments to evaluate the value of adding synthetic imagery in improving the accuracy and adaptability of object detection across different regions. Our results suggest that adding GP-GAN generated synthetic imagery to our baseline training dataset improves average precision from the baseline and slightly outperforms synthetic imagery created with 3D models of energy infrastructure.
                     </p>
                 </div>
             </div>

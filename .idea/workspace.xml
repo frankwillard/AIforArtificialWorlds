@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="changed dist folder to docs">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="54b00337-c56a-4f87-a38b-4c9e95638468" name="Default Changelist" comment="updated meta">
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,13 +56,6 @@
       <option name="presentableId" value="Default" />
       <updated>1627659144543</updated>
       <workItem from="1627659145992" duration="764000" />
-    </task>
-    <task id="LOCAL-00020" summary="added takeaways">
-      <created>1628145093277</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1628145093278</updated>
     </task>
     <task id="LOCAL-00021" summary="updated future work">
       <created>1628145366155</created>
@@ -401,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628997051294</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="updated meta">
+      <created>1628997252609</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1628997252612</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +418,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added google scholar" />
     <MESSAGE value="added naip citation" />
     <MESSAGE value="added igarss stuff" />
     <MESSAGE value="added captions to takeaways" />
@@ -444,6 +442,7 @@
     <MESSAGE value="added abstract" />
     <MESSAGE value="switched image for synthetic examples" />
     <MESSAGE value="changed dist folder to docs" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed dist folder to docs" />
+    <MESSAGE value="updated meta" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated meta" />
   </component>
 </project>
